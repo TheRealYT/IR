@@ -1,0 +1,9 @@
+Amharic
+
+Unicode #4608 - ሀ
+
+Array(400).fill(0).map((_, i) => String.fromCharCode(4608 + i))
+
+  0 - 346  Letters
+349 - 360  Punctuations
+361 - 380  Numbers
