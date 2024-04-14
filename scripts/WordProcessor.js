@@ -10,6 +10,8 @@ const delimiters = [
     '\n',
     '።',
     '፡',
+    '፤',
+    '፣',
 ].map(v => v.charCodeAt(0));
 
 const spacedWords = require('./../words.json');
