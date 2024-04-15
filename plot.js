@@ -9,7 +9,7 @@ countAll().then(async wordFreq => {
     const freq = new Array(wordFreq.length);
 
     wordFreq.forEach(([word, cnt], i) => {
-        words[i] = word;
+        words[i] = `${i+1} ${word}`;
         freq[i] = cnt;
     });
 
