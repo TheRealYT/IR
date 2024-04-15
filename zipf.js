@@ -6,7 +6,7 @@ countAll().then(wordFreq => {
 
     let i = 1;
     for (const [word, freq] of wordFreq) {
-        console.log(word, freq, (C / i).toFixed(2));
+        console.log(word, freq, C / i);
         i++;
     }
 });
