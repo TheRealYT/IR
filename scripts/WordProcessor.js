@@ -70,7 +70,7 @@ function wordProcessor() {
                     } else {
                         const word = chars.join('');
 
-                        if (word in spacedWords) {
+                        if (word !== '' && word in spacedWords) {
                             space = true;
                             return;
                         }
@@ -79,6 +79,7 @@ function wordProcessor() {
 
                 const word = chars.join('');
                 await addWord(word);
+                space = false;
                 chars.splice(0);
             } else if (space) {
                 const word = chars.join('');
