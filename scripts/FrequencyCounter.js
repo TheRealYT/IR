@@ -1,11 +1,10 @@
 const path = require('node:path');
 const fs = require('node:fs/promises');
 
-const tmpPath = path.join(__dirname, '..', 'tmp');
 const words = [];
 
-async function countAll() {
-    for (const word of await fs.readdir(tmpPath, {withFileTypes: true})) {
+async function countAll(tokenDir = process.argv?.[2] ?? 'tmp') {
+    for (const word of await fs.readdir(tokenDir, {withFileTypes: true})) {
         if (word.isFile()) {
             const wordName = path.basename(word.name, path.extname(word.name));
             const freq = (await fs.readFile(path.join(word.path, word.name))).toString();
