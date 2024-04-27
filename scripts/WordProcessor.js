@@ -7,6 +7,7 @@ const WORD_END = HA + 346;
 
 const delimiters = [
     ' ',
+    '\r',
     '\n',
     '።',
     '፡',
@@ -18,7 +19,7 @@ const spacedWords = require('./../words.json');
 
 let words = 0;
 
-function wordProcessor() {
+function wordProcessor(outputPath) {
     const chars = [];
     let space = false;
     const charsNext = [];
@@ -50,7 +51,7 @@ function wordProcessor() {
                         }
                     }
 
-                    await addWord(word);
+                    await addWord(word, outputPath);
                     space = false;
                     chars.splice(0);
                     chars.push(...charsNext);
@@ -61,29 +62,29 @@ function wordProcessor() {
 
                 chars.push(String.fromCharCode(char));
             } else if (chars.length > 0 && delimiters.includes(char)) {
-                if (char === 32) {
-                    // handle compound word
-                    if (space) {
-                        chars.push(' ', ...charsNext);
-                        space = false;
-                        charsNext.splice(0);
-                    } else {
-                        const word = chars.join('');
+                if (space) {
+                    // save compound word
+                    chars.push(' ', ...charsNext);
+                    space = false;
+                    charsNext.splice(0);
+                } else {
+                    const word = chars.join('');
 
-                        if (word !== '' && word in spacedWords) {
-                            space = true;
-                            return;
-                        }
+                    if (word !== '' && word in spacedWords) {
+                        // found compound word
+                        space = true;
+                    } else {
+                        // normal word
+                        const word = chars.join('');
+                        await addWord(word, outputPath);
+                        space = false;
+                        chars.splice(0);
                     }
                 }
-
-                const word = chars.join('');
-                await addWord(word);
-                space = false;
-                chars.splice(0);
             } else if (space) {
+                // unknown char, ignore compound word
                 const word = chars.join('');
-                await addWord(word);
+                await addWord(word, outputPath);
                 space = false;
                 chars.splice(0);
             }
@@ -95,13 +96,11 @@ function isLetter(ch) {
     return ch >= HA && ch <= WORD_END;
 }
 
-const tmpPath = path.join(__dirname, '..', 'tmp');
+async function addWord(word, outputPath) {
+    if (!existsSync(outputPath))
+        await fs.mkdir(outputPath);
 
-async function addWord(word) {
-    if (!existsSync(tmpPath))
-        await fs.mkdir(tmpPath);
-
-    const wordPath = path.join(tmpPath, `${word}.txt`);
+    const wordPath = path.join(outputPath, `${word}.txt`);
 
     let freq = 1;
     if (existsSync(wordPath))

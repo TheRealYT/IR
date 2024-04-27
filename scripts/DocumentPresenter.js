@@ -1,20 +1,37 @@
 const fs = require('node:fs/promises');
+const {existsSync} = require('node:fs');
 const path = require('node:path');
 
 let docs = 0;
 
-async function loadDocuments() {
-    const files = await fs.readdir(path.join(__dirname, '..', 'data'), {withFileTypes: true});
+async function loadDocuments(inputPath) {
+    if (!existsSync(inputPath)) throw Error('Input path doesn\'t exit');
+    const stat = await fs.stat(inputPath);
+    const files =
+        stat.isDirectory()
+            ? await fs.readdir(inputPath, {withFileTypes: true})
+            : null;
 
     return async function* next() {
-        for (const file of files)
-            if (file.isFile()) {
-                docs++;
-                const reader = await read(path.join(file.path, file.name));
-                for await (const char of reader()) {
-                    yield char;
+        if (files != null) {
+            for (const file of files)
+                if (file.isFile()) {
+                    docs++;
+                    console.log('Processing:', file.name);
+
+                    const reader = await read(path.join(file.path, file.name));
+                    for await (const char of reader()) {
+                        yield char;
+                    }
                 }
+        } else {
+            docs = 1;
+            const reader = await read(inputPath);
+            console.log('Processing:', inputPath);
+            for await (const char of reader()) {
+                yield char;
             }
+        }
     };
 }
 
