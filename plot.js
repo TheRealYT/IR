@@ -1,7 +1,7 @@
 const fs = require('node:fs/promises');
 const child_process = require('node:child_process');
 
-const {countAll} = require('./scripts/FrequencyCounter');
+const {countAll} = require('./scripts/Frequency');
 const path = require('path');
 
 countAll().then(async wordFreq => {

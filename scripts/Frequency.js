@@ -1,5 +1,6 @@
 const path = require('node:path');
 const fs = require('node:fs/promises');
+const {existsSync} = require('node:fs');
 
 const words = [];
 
@@ -15,4 +16,16 @@ async function countAll(tokenDir = process.argv?.[2] ?? 'tmp') {
     return words;
 }
 
-module.exports = {countAll};
+async function addWord(word, outputPath) {
+    if (!existsSync(outputPath))
+        await fs.mkdir(outputPath);
+
+    const wordPath = path.join(outputPath, `${word}.txt`);
+
+    let freq = 1;
+    if (existsSync(wordPath))
+        freq += +(await fs.readFile(wordPath)).toString();
+    await fs.writeFile(wordPath, freq.toString());
+}
+
+module.exports = {countAll, addWord};

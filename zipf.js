@@ -1,4 +1,4 @@
-const {countAll} = require('./scripts/FrequencyCounter');
+const {countAll} = require('./scripts/Frequency');
 
 countAll().then(wordFreq => {
     const C = wordFreq[0][1];
