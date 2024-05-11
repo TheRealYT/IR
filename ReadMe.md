@@ -8,16 +8,16 @@ to handle the unique characteristics of the Amharic language.
 
 ### How to use (steps)
 
-1. Run tokenizer (make sure to remove `tmp` directory if tokenization is repeated on the same documents since it
+1. Run tokenizer (make sure to remove `token.json` directory if tokenization is repeated on the same documents since it
    appends(counts) the result from there)
    or pass different arguments like these
-    - By default, the tokenizer uses `tmp` as an output
-    - ```node tokenize.js data\doc.txt``` tokenize one file to `tmp` folder
-    - ```node tokenize.js data\doc.txt words``` save tokens to `words` directory instead of `tmp`
-    - ```node tokenize.js data words``` tokenize all files inside data folder to `words` folder
+    - By default, the tokenizer uses `token.json` as an output
+    - ```node tokenize.js data\doc.txt``` tokenize one file to `token.json` file
+    - ```node tokenize.js data\doc.txt words.json``` save tokens to `words.json` file instead of `token.json`
+    - ```node tokenize.js data words.json``` tokenize all files inside data folder to `words.json` file
 2. Next any of the following codes can be executed independently
-    - The following commands can accept an argument to override the default `tmp` folder like
-      this `node file.js other_folder`
+    - The following commands can accept an argument to override the default `token.json` file like
+      this `node file.js other_token_file.json`
     - ```node freq.js``` calculate frequency of words
     - ```node rank.js``` calculate rank of words based on frequency
     - ```node freq_rank.js``` calculate the product of rank and frequency

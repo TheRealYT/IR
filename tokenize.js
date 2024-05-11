@@ -1,13 +1,13 @@
 const {loadDocuments, read} = require('./scripts/DocumentPresenter');
-const {addWord} = require('./scripts/Frequency');
+const fs = require('node:fs/promises');
 
 if (process.argv.length < 3) {
-    console.log('Usage: node tokenizer.js [text_file] [output_dir]');
-    console.log('       node tokenizer.js [input_dir] [output_dir]');
+    console.log('Usage: node tokenizer.js [text_file] [output_file]');
+    console.log('       node tokenizer.js [input_dir] [output_file]');
     return process.exit(1);
 }
 
-const [_, __, inputPath, outputPath = 'tmp'] = process.argv;
+const [_, __, inputPath, outputPath = 'token.json'] = process.argv;
 
 console.log('Input:', inputPath);
 console.log('Output:', outputPath);
@@ -33,6 +33,7 @@ console.log('--------------------------------------------');
         const words = content
             .split(' ')
             .filter(word => word.length > 1);
+        const wordFreq = {}
 
         for (let i = 0; i < words.length - 1; i++) {
             const word = words[i];
@@ -44,10 +45,15 @@ console.log('--------------------------------------------');
                 words.splice(i + 1, 1);
             }
 
-            await addWord(words[i], outputPath);
+            if (word in wordFreq) {
+                wordFreq[word] += 1;
+            } else {
+                wordFreq[word] = 1;
+            }
         }
 
         wordsCount += words.length;
+        await fs.writeFile(outputPath, JSON.stringify(wordFreq))
     }
 
     console.log('--------------------------------------------');
