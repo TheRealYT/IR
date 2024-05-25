@@ -2,8 +2,8 @@ const {loadDocuments, read} = require('./scripts/DocumentPresenter');
 const fs = require('node:fs/promises');
 
 if (process.argv.length < 3) {
-    console.log('Usage: node tokenizer.js [text_file] [output_file]');
-    console.log('       node tokenizer.js [input_dir] [output_file]');
+    console.log('Usage: node processor.js [text_file] [output_file]');
+    console.log('       node processor.js [input_dir] [output_file]');
     return process.exit(1);
 }
 
