@@ -1,3 +1,4 @@
 # Project exclude paths
 /tmp/
 /.idea/
+/server/node_modules/
