@@ -36,7 +36,7 @@ router.post('/process', async (req, res) => {
         const words = tokenize(content);
         wordsCount += words.length;
 
-        normalize(words);
+        await normalize(words);
         freq(words, docFreq); // count entire freq
         stem(words);
 
@@ -50,8 +50,8 @@ router.post('/process', async (req, res) => {
 
     const [words, freqs] = sortedWordFreq(docFreq);
     const graphData = drawGraph(words, freqs);
-    // Luhn, Zipf -> (words)
-    removeStopWords(docFreq); // clean up indices
+    // Luhn
+    await removeStopWords(docFreq, indexWords); // clean up indices
 
     await fs.writeFile(INDEX_PATH, JSON.stringify(indexWords));
 
