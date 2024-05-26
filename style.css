@@ -19,7 +19,7 @@ button {
 }
 
 .search-box {
-    @apply flex p-2 rounded bg-gray-700 text-white caret-white border-gray-600 outline-none hover:bg-gray-600 transition-all
+    @apply sticky top-0 flex p-2 rounded bg-gray-700 text-white caret-white border-gray-600 outline-none hover:bg-gray-600 transition-all
 }
 
 .search {

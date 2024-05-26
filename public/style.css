@@ -711,6 +711,8 @@ button {
 }
 
 .search-box {
+  position: sticky;
+  top: 0px;
   display: flex;
   border-radius: 0.25rem;
   --tw-border-opacity: 1;
