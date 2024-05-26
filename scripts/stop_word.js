@@ -3,6 +3,8 @@ const path = require('node:path');
 
 async function removeStopWords(wordFreq, indexTerms) {
     let freqSum = 0;
+    let max = 0;
+    let min = 0;
 
     for (let key in wordFreq) {
         freqSum += wordFreq[key];
@@ -12,7 +14,7 @@ async function removeStopWords(wordFreq, indexTerms) {
     const rare = [];
 
     for (let key in wordFreq) {
-        let per = (wordFreq[key] / freqSum) * 100;
+        let per = (wordFreq[key] / freqSum) * 1000;
 
         if (per < 9 && per > 1) {
             // index term
@@ -26,6 +28,8 @@ async function removeStopWords(wordFreq, indexTerms) {
                 rare.push(key);
             }
         }
+        max = Math.max(per, max)
+        min = Math.min(per, min)
     }
 
     await fs.writeFile(path.join(__dirname, '..', 'index_words.txt'), Object.keys(indexTerms).join('\n'));
