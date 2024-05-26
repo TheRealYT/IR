@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "css": "tailwindcss -i ./style.css -o ./public/style.css --watch"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
