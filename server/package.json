@@ -1,6 +1,10 @@
 {
+  "scripts": {
+    "start": "node index.js",
+    "css": "tailwindcss -i ./style.css -o ./public/style.css --watch"
+  },
+  "main": "index.js",
   "dependencies": {
-    "express": "^4.19.2",
-    "felig-toolkit": "^2.0.1"
+    "express": "^4.19.2"
   }
 }
