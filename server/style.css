@@ -3,9 +3,50 @@
 @tailwind utilities;
 
 button {
+    @apply cursor-pointer
+}
+
+.btn {
     @apply bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center;
 }
 
 .btn-blue:disabled {
     @apply bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed
+}
+
+.search-box {
+    @apply flex p-2 rounded bg-gray-700 text-white caret-white border-gray-600 outline-none hover:bg-gray-600 transition-all
+}
+
+.search {
+    @apply px-5 bg-transparent outline-none w-full text-gray-400 focus:text-gray-100
+}
+
+.msg {
+    @apply px-7 py-1 text-sm w-full rounded-b bg-gray-800 text-gray-300 relative top-[-2px] transition-all
+}
+
+.msg:empty {
+    @apply bg-transparent p-0
+}
+
+.docs {
+    @apply bg-gray-800 p-2 rounded text-white
+}
+
+.doc {
+    @apply px-2 py-3 w-full rounded hover:bg-gray-700 cursor-pointer flex-col items-start justify-center text-gray-300 hover:text-gray-200 transition-all shadow
+}
+
+
+.doc:hover .caption-end, .doc:hover .caption {
+    @apply text-gray-300
+}
+
+.caption {
+    @apply text-sm flex justify-between text-gray-400
+}
+
+.caption-end {
+    @apply text-sm text-right
 }

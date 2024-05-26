@@ -1,5 +1,4 @@
-const fs = require('node:fs/promises');
-const {existsSync} = require('node:fs');
+const fs = require('node:fs');
 const path = require('node:path');
 
 const {tokenize} = require('./tokenize');
@@ -11,7 +10,7 @@ const DOCS_PATH = path.join(__dirname, '..', 'docs');
 const INDEX_PATH = path.join(__dirname, '..', 'indices.json');
 
 async function retrieve(q) {
-    if (!existsSync(DOCS_PATH) || !existsSync(INDEX_PATH))
+    if (!fs.existsSync(DOCS_PATH) || !fs.existsSync(INDEX_PATH))
         return null;
 
     const terms = tokenize(q);
@@ -47,7 +46,21 @@ async function retrieve(q) {
 
     return Object
         .entries(docVectors)
-        .map(([doc, vector]) => ({doc, score: cosine(vector, queryVector)}))
+        .map(([doc, vector]) => {
+            let stats = '';
+            try {
+                const stats1 = fs.statSync(path.join(DOCS_PATH, doc));
+                const date = new Date(stats1.ctime);
+                stats = `${Math.round(stats1.size / 1024)}KB • ${date.toUTCString()}`;
+            } catch (e) {
+            }
+
+            return {
+                doc,
+                score: cosine(vector, queryVector),
+                stats,
+            };
+        })
         .sort((a, b) => b.score - a.score);
 }
 
@@ -67,7 +80,5 @@ function cosine(vectorA, vectorB) {
 
     return dotProduct / (Math.sqrt(absA * absB));
 }
-
-// retrieve('ተማሪ ስንተኛ ክፍል ነው።').then(console.log);
 
 module.exports = {retrieve, cosine};
