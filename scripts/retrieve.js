@@ -1,4 +1,5 @@
 const fs = require('node:fs');
+const fss = require('node:fs/promises');
 const path = require('node:path');
 
 const {tokenize} = require('./tokenize');
@@ -20,7 +21,7 @@ async function retrieve(q) {
     stem(terms);
     freq(terms, queryFreq);
 
-    const index = require('./../indices.json');
+    const index = JSON.parse((await fss.readFile(INDEX_PATH)).toString());
     const uniqueTerms = Object.keys(queryFreq);
     const queryVector = Object.values(queryFreq);
     const docVectors = {};
