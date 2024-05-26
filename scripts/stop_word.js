@@ -28,9 +28,9 @@ async function removeStopWords(wordFreq, indexTerms) {
         }
     }
 
-    await fs.writeFile(path.join(__dirname, '..', 'index_words.txt'), Object.keys(indexTerms).join('\n'));
-    await fs.writeFile(path.join(__dirname, '..', 'stop_words.txt'), stop.join('\n'));
-    await fs.writeFile(path.join(__dirname, '..', 'rare_words.txt'), rare.join('\n'));
+    await fs.appendFile(path.join(__dirname, '..', 'index_words.txt'), Object.keys(indexTerms).join('\n'));
+    await fs.appendFile(path.join(__dirname, '..', 'stop_words.txt'), stop.join('\n'));
+    await fs.appendFile(path.join(__dirname, '..', 'rare_words.txt'), rare.join('\n'));
 }
 
 module.exports = {removeStopWords};
