@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document Processor</title>
+</head>
+<body>
+    <div class="upload">
+        Drop file here or
+        <label class="lbl-upload" for="uploadFile">Choose file</label>
+    </div>
+    <form>
+        <input id="uploadFile" type="file" accept="text/plain" multiple="multiple" hidden="hidden">
+    </form>
+
+    <div class="w-[500px]">
+        <ul></ul>
+    </div>
+    <button class="btn btn-upload" disabled>Upload</button>
+    <p></p>
+
+    <div class="w-full h-full">
+        <canvas id="freqChart"></canvas>
+    </div>
+
+    <script src="/assets/chart.js.js"></script>
+    <script>
+        const ctx = document.getElementById('freqChart');
+
+        function draw(labels, data) {
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Frequency',
+                        data,
+                        borderWidth: 0,
+                        barThickness: 10,
+                    }],
+                },
+            });
+        }
+    </script>
+    <script>
+        const container = document.querySelector('.upload');
+        const fileInput = document.querySelector('input[type=file]');
+        const ul = document.querySelector('ul');
+        const p = document.querySelector('p');
+        const btn = document.querySelector('button.btn-upload');
+
+        const files = {};
+
+        function rem(e) {
+            const name = e.previousSibling.textContent;
+            if (name in files)
+                delete files[name];
+
+            e.parentNode.remove();
+
+            btn.disabled = Object.keys(files).length <= 0;
+        }
+
+        fileInput.onchange = async () => {
+            for (const file of fileInput.files) {
+                if (!(file.name in files))
+                    ul.innerHTML += `<li>${file.name}<button onclick="rem(this)">X</button></li>`;
+
+                files[file.name] = await file.text();
+            }
+
+            btn.disabled = Object.keys(files).length <= 0;
+            fileInput.parentElement.reset();
+        };
+
+        document.body.parentElement.ondragover = (e) => {
+            container.classList.add('hover');
+            e.preventDefault();
+        };
+
+        document.body.parentElement.ondragleave = () => {
+            container.classList.remove('hover');
+        };
+
+        document.body.parentElement.ondrop = async (e) => {
+            container.classList.remove('hover');
+            e.preventDefault();
+
+            for (const file of e.dataTransfer.files) {
+                if (file.type === 'text/plain') {
+                    if (!(file.name in files))
+                        ul.innerHTML += `<li>${file.name}<button onclick="rem(this)">X</button></li>`;
+
+                    files[file.name] = await file.text();
+                }
+            }
+
+            btn.disabled = Object.keys(files).length <= 0;
+        };
+
+        btn.onclick = async () => {
+            btn.disabled = true;
+            p.innerText = 'Uploading...';
+
+            const res = await fetch('/process', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    files: Object.entries(files).map(([name, content]) => ({name, content})),
+                }),
+            }).catch(e => {
+                p.innerText = e.message;
+                btn.disabled = false;
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                p.innerText = `${data.text}`;
+                draw(data.graphData.labels, data.graphData.data);
+            } else {
+                btn.disabled = false;
+                p.innerText = res.statusText;
+            }
+        };
+    </script>
+</body>
+</html>
