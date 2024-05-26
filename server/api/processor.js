@@ -43,7 +43,7 @@ router.post('/process', async (req, res) => {
         const termFreq = {};
         freq(words, termFreq); // count only in a doc
 
-        index(docName, termFreq, indexWords); // use all terms as index
+        index(docName, [Object.keys(termFreq), Object.values(termFreq)], indexWords); // use all terms as index
 
         await fs.writeFile(filepath, content);
     }

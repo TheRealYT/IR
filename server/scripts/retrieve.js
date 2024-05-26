@@ -81,4 +81,4 @@ function cosine(vectorA, vectorB) {
     return dotProduct / (Math.sqrt(absA * absB));
 }
 
-module.exports = {retrieve, cosine};
+module.exports = {retrieve};

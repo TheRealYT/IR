@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Document Processor</title>
 </head>
-<body class="flex flex-col items-center p-5">
-    <form>
-        <input type="file" accept="text/*" multiple="multiple">
-    </form>
-    <div>
-        <ul>
-        </ul>
+<body>
+    <div class="upload">
+        Drop file here or
+        <label class="lbl-upload" for="uploadFile">Choose file</label>
     </div>
-    <button class="btn-blue" disabled>Upload</button>
+    <form>
+        <input id="uploadFile" type="file" accept="text/plain" multiple="multiple" hidden="hidden">
+    </form>
+
+    <div class="w-[500px]">
+        <ul></ul>
+    </div>
+    <button class="btn btn-upload" disabled>Upload</button>
     <p></p>
 
     <div>
@@ -43,46 +47,89 @@
         }
     </script>
     <script>
-        const fileInput = document.querySelector('input[type=file]');
-        const ul = document.querySelector('ul');
-        const p = document.querySelector('p');
-        const btn = document.querySelector('button');
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.upload');
+            const fileInput = document.querySelector('input[type=file]');
+            const ul = document.querySelector('ul');
+            const p = document.querySelector('p');
+            const btn = document.querySelector('button.btn-upload');
 
-        fileInput.onchange = async () => {
-            ul.innerHTML = '';
-            btn.disabled = fileInput.files.length <= 0;
+            const files = {};
 
-            for (const file of fileInput.files) {
-                ul.innerHTML += `<li>${file.name}</li>`;
+            function rem(e) {
+                const name = e.previousSibling.textContent;
+                if (name in files)
+                    delete files[name];
+
+                e.parentNode.remove();
+
+                btn.disabled = Object.keys(files).length <= 0;
             }
-        };
 
-        btn.onclick = async () => {
-            btn.disabled = true;
-            p.innerText = 'Uploading...';
+            fileInput.onchange = async () => {
+                for (const file of fileInput.files) {
+                    if (!(file.name in files))
+                        ul.innerHTML += `<li>${file.name}<button onclick="rem(this)">X</button></li>`;
 
-            const files = [];
-            for (const file of fileInput.files)
-                files.push({name: file.name, content: await file.text()});
+                    files[file.name] = await file.text();
+                }
 
-            const res = await fetch('/process', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    files,
-                }),
-            });
+                btn.disabled = Object.keys(files).length <= 0;
+                fileInput.parentElement.reset();
+            };
 
-            if (res.ok) {
-                const data = await res.json();
-                p.innerText = `${data.text}`;
-                draw(data.graphData.labels, data.graphData.data);
-            } else {
-                p.innerText = res.statusText;
-            }
-        };
+            document.body.parentElement.ondragover = (e) => {
+                container.classList.add('hover');
+                e.preventDefault();
+            };
+
+            document.body.parentElement.ondragleave = () => {
+                container.classList.remove('hover');
+            };
+
+            document.body.parentElement.ondrop = async (e) => {
+                container.classList.remove('hover');
+                e.preventDefault();
+
+                for (const file of e.dataTransfer.files) {
+                    if (file.type === 'text/plain') {
+                        if (!(file.name in files))
+                            ul.innerHTML += `<li>${file.name}<button onclick="rem(this)">X</button></li>`;
+
+                        files[file.name] = await file.text();
+                    }
+                }
+
+                btn.disabled = Object.keys(files).length <= 0;
+            };
+
+            btn.onclick = async () => {
+                btn.disabled = true;
+                p.innerText = 'Uploading...';
+
+                const res = await fetch('/process', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        files: Object.entries(files).map(([name, content]) => ({name, content})),
+                    }),
+                }).catch(e => {
+                    p.innerText = e.message;
+                    btn.disabled = false;
+                });
+
+                if (res.ok) {
+                    const data = await res.json();
+                    p.innerText = `${data.text}`;
+                    draw(data.graphData.labels, data.graphData.data);
+                } else {
+                    btn.disabled = false;
+                    p.innerText = res.statusText;
+                }
+            };
+        });
     </script>
 </body>
 </html>
