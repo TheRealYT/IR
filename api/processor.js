@@ -61,7 +61,8 @@ router.post('/process', async (req, res) => {
         graphData,
         text: `⌚ Time taken ${endTime - startTime}sec
 ✅ Total of ${files.length} document(s) processed
-✅ Total of ${wordsCount} word(s) processed`,
+✅ Total of ${wordsCount} word(s) processed
+✅ Total of ${words.length} unique word(s)`,
     });
 });
 
