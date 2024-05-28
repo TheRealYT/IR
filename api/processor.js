@@ -44,6 +44,7 @@ router.post('/process', async (req, res) => {
         const termFreq = {};
         freq(words, termFreq); // count only in a doc, we may need to save the word freq of each doc
 
+        // TODO: move outside the loop, store values outside
         index(docName, [Object.keys(termFreq), Object.values(termFreq)], indexWords); // use all terms as index
 
         await fs.writeFile(filepath, content);
