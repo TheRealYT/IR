@@ -1,0 +1,3158 @@
+[
+  {
+    "word": "የማዯጎ",
+    "frequency": 1,
+    "rank": 1,
+    "multipliedValue": 1
+  },
+  {
+    "word": "ጋብቻ",
+    "frequency": 1,
+    "rank": 2,
+    "multipliedValue": 2
+  },
+  {
+    "word": "ዯመቀች",
+    "frequency": 1,
+    "rank": 3,
+    "multipliedValue": 3
+  },
+  {
+    "word": "ጸሐይ",
+    "frequency": 1,
+    "rank": 4,
+    "multipliedValue": 4
+  },
+  {
+    "word": "ሇታምራት",
+    "frequency": 1,
+    "rank": 5,
+    "multipliedValue": 5
+  },
+  {
+    "word": "ተገኘ",
+    "frequency": 4,
+    "rank": 6,
+    "multipliedValue": 24
+  },
+  {
+    "word": "ስትዲር",
+    "frequency": 1,
+    "rank": 7,
+    "multipliedValue": 7
+  },
+  {
+    "word": "የመሌክዋ",
+    "frequency": 1,
+    "rank": 8,
+    "multipliedValue": 8
+  },
+  {
+    "word": "ንዴፍ",
+    "frequency": 1,
+    "rank": 9,
+    "multipliedValue": 9
+  },
+  {
+    "word": "መስመሩ",
+    "frequency": 1,
+    "rank": 10,
+    "multipliedValue": 10
+  },
+  {
+    "word": "ብቻ",
+    "frequency": 5,
+    "rank": 11,
+    "multipliedValue": 55
+  },
+  {
+    "word": "ውብ",
+    "frequency": 1,
+    "rank": 12,
+    "multipliedValue": 12
+  },
+  {
+    "word": "ሆኖ",
+    "frequency": 3,
+    "rank": 13,
+    "multipliedValue": 39
+  },
+  {
+    "word": "ተሰምሮ",
+    "frequency": 1,
+    "rank": 14,
+    "multipliedValue": 14
+  },
+  {
+    "word": "የወዯፊት",
+    "frequency": 1,
+    "rank": 15,
+    "multipliedValue": 15
+  },
+  {
+    "word": "ውበትዋ",
+    "frequency": 1,
+    "rank": 16,
+    "multipliedValue": 16
+  },
+  {
+    "word": "ገና",
+    "frequency": 1,
+    "rank": 17,
+    "multipliedValue": 17
+  },
+  {
+    "word": "በውጥን",
+    "frequency": 1,
+    "rank": 18,
+    "multipliedValue": 18
+  },
+  {
+    "word": "የሚታይ",
+    "frequency": 1,
+    "rank": 19,
+    "multipliedValue": 19
+  },
+  {
+    "word": "የዘጠኝ",
+    "frequency": 1,
+    "rank": 20,
+    "multipliedValue": 20
+  },
+  {
+    "word": "አመት",
+    "frequency": 3,
+    "rank": 21,
+    "multipliedValue": 63
+  },
+  {
+    "word": "ሇጋ",
+    "frequency": 1,
+    "rank": 22,
+    "multipliedValue": 22
+  },
+  {
+    "word": "ቡቃያ",
+    "frequency": 1,
+    "rank": 23,
+    "multipliedValue": 23
+  },
+  {
+    "word": "ነበረች",
+    "frequency": 1,
+    "rank": 24,
+    "multipliedValue": 24
+  },
+  {
+    "word": "ታምራት",
+    "frequency": 7,
+    "rank": 25,
+    "multipliedValue": 175
+  },
+  {
+    "word": "አምስት",
+    "frequency": 3,
+    "rank": 26,
+    "multipliedValue": 78
+  },
+  {
+    "word": "አግብቶ",
+    "frequency": 1,
+    "rank": 27,
+    "multipliedValue": 27
+  },
+  {
+    "word": "የፈታ",
+    "frequency": 1,
+    "rank": 28,
+    "multipliedValue": 28
+  },
+  {
+    "word": "ያምሳ",
+    "frequency": 1,
+    "rank": 29,
+    "multipliedValue": 29
+  },
+  {
+    "word": "ሰው",
+    "frequency": 4,
+    "rank": 30,
+    "multipliedValue": 120
+  },
+  {
+    "word": "ነበር",
+    "frequency": 6,
+    "rank": 31,
+    "multipliedValue": 186
+  },
+  {
+    "word": "የዯመቀች",
+    "frequency": 1,
+    "rank": 32,
+    "multipliedValue": 32
+  },
+  {
+    "word": "አባት",
+    "frequency": 3,
+    "rank": 33,
+    "multipliedValue": 99
+  },
+  {
+    "word": "ባሻ",
+    "frequency": 3,
+    "rank": 34,
+    "multipliedValue": 102
+  },
+  {
+    "word": "ጸሀይ",
+    "frequency": 3,
+    "rank": 35,
+    "multipliedValue": 105
+  },
+  {
+    "word": "አበራ",
+    "frequency": 1,
+    "rank": 36,
+    "multipliedValue": 36
+  },
+  {
+    "word": "ካባታቸው",
+    "frequency": 1,
+    "rank": 37,
+    "multipliedValue": 37
+  },
+  {
+    "word": "ጀምረው",
+    "frequency": 1,
+    "rank": 38,
+    "multipliedValue": 38
+  },
+  {
+    "word": "ወዯ",
+    "frequency": 3,
+    "rank": 39,
+    "multipliedValue": 117
+  },
+  {
+    "word": "ሊይ",
+    "frequency": 3,
+    "rank": 40,
+    "multipliedValue": 120
+  },
+  {
+    "word": "ብዙ",
+    "frequency": 3,
+    "rank": 41,
+    "multipliedValue": 123
+  },
+  {
+    "word": "ፊታውራሪና",
+    "frequency": 1,
+    "rank": 42,
+    "multipliedValue": 42
+  },
+  {
+    "word": "ዯጃዝማች",
+    "frequency": 2,
+    "rank": 43,
+    "multipliedValue": 86
+  },
+  {
+    "word": "አያት",
+    "frequency": 2,
+    "rank": 44,
+    "multipliedValue": 88
+  },
+  {
+    "word": "ቅዴመ",
+    "frequency": 2,
+    "rank": 45,
+    "multipliedValue": 90
+  },
+  {
+    "word": "አያቶች",
+    "frequency": 1,
+    "rank": 46,
+    "multipliedValue": 46
+  },
+  {
+    "word": "የሚቆጥሩ",
+    "frequency": 1,
+    "rank": 47,
+    "multipliedValue": 47
+  },
+  {
+    "word": "መሰረተ",
+    "frequency": 1,
+    "rank": 48,
+    "multipliedValue": 48
+  },
+  {
+    "word": "ጌታ",
+    "frequency": 7,
+    "rank": 49,
+    "multipliedValue": 343
+  },
+  {
+    "word": "ነበሩ",
+    "frequency": 4,
+    "rank": 50,
+    "multipliedValue": 200
+  },
+  {
+    "word": "ነገር",
+    "frequency": 5,
+    "rank": 51,
+    "multipliedValue": 255
+  },
+  {
+    "word": "ግን",
+    "frequency": 4,
+    "rank": 52,
+    "multipliedValue": 208
+  },
+  {
+    "word": "ጌቶች",
+    "frequency": 2,
+    "rank": 53,
+    "multipliedValue": 106
+  },
+  {
+    "word": "አባቶቻቸው",
+    "frequency": 1,
+    "rank": 54,
+    "multipliedValue": 54
+  },
+  {
+    "word": "ሀብቱን",
+    "frequency": 1,
+    "rank": 55,
+    "multipliedValue": 55
+  },
+  {
+    "word": "ሁለ",
+    "frequency": 6,
+    "rank": 56,
+    "multipliedValue": 336
+  },
+  {
+    "word": "በየጊዜው",
+    "frequency": 1,
+    "rank": 57,
+    "multipliedValue": 57
+  },
+  {
+    "word": "ዜያቸው",
+    "frequency": 1,
+    "rank": 58,
+    "multipliedValue": 58
+  },
+  {
+    "word": "እነሱ",
+    "frequency": 1,
+    "rank": 59,
+    "multipliedValue": 59
+  },
+  {
+    "word": "ጨርሰው",
+    "frequency": 1,
+    "rank": 60,
+    "multipliedValue": 60
+  },
+  {
+    "word": "የጌታ",
+    "frequency": 3,
+    "rank": 61,
+    "multipliedValue": 183
+  },
+  {
+    "word": "ዘር",
+    "frequency": 2,
+    "rank": 62,
+    "multipliedValue": 124
+  },
+  {
+    "word": "መባለን",
+    "frequency": 1,
+    "rank": 63,
+    "multipliedValue": 63
+  },
+  {
+    "word": "ስሙን",
+    "frequency": 2,
+    "rank": 64,
+    "multipliedValue": 128
+  },
+  {
+    "word": "አውርሰዋቸው",
+    "frequency": 1,
+    "rank": 65,
+    "multipliedValue": 65
+  },
+  {
+    "word": "ስሊሇፉ",
+    "frequency": 1,
+    "rank": 66,
+    "multipliedValue": 66
+  },
+  {
+    "word": "ባባቶቻቸው",
+    "frequency": 1,
+    "rank": 67,
+    "multipliedValue": 67
+  },
+  {
+    "word": "ስም",
+    "frequency": 3,
+    "rank": 68,
+    "multipliedValue": 204
+  },
+  {
+    "word": "የሚኖሩ",
+    "frequency": 1,
+    "rank": 69,
+    "multipliedValue": 69
+  },
+  {
+    "word": "ችግረኛ",
+    "frequency": 1,
+    "rank": 70,
+    "multipliedValue": 70
+  },
+  {
+    "word": "መኮንን",
+    "frequency": 1,
+    "rank": 71,
+    "multipliedValue": 71
+  },
+  {
+    "word": "መቸም",
+    "frequency": 2,
+    "rank": 72,
+    "multipliedValue": 144
+  },
+  {
+    "word": "ሌጅነት",
+    "frequency": 2,
+    "rank": 73,
+    "multipliedValue": 146
+  },
+  {
+    "word": "ከሀብት",
+    "frequency": 1,
+    "rank": 74,
+    "multipliedValue": 74
+  },
+  {
+    "word": "ጋር",
+    "frequency": 6,
+    "rank": 75,
+    "multipliedValue": 450
+  },
+  {
+    "word": "ሲገኝ",
+    "frequency": 1,
+    "rank": 76,
+    "multipliedValue": 76
+  },
+  {
+    "word": "ማሇፊያ",
+    "frequency": 1,
+    "rank": 77,
+    "multipliedValue": 77
+  },
+  {
+    "word": "የውር",
+    "frequency": 1,
+    "rank": 78,
+    "multipliedValue": 78
+  },
+  {
+    "word": "ስጦታ",
+    "frequency": 1,
+    "rank": 79,
+    "multipliedValue": 79
+  },
+  {
+    "word": "ነው",
+    "frequency": 8,
+    "rank": 80,
+    "multipliedValue": 640
+  },
+  {
+    "word": "ከበት",
+    "frequency": 1,
+    "rank": 81,
+    "multipliedValue": 81
+  },
+  {
+    "word": "ተሇይቶ",
+    "frequency": 1,
+    "rank": 82,
+    "multipliedValue": 82
+  },
+  {
+    "word": "ብቻውን",
+    "frequency": 1,
+    "rank": 83,
+    "multipliedValue": 83
+  },
+  {
+    "word": "ሲመጣ",
+    "frequency": 2,
+    "rank": 84,
+    "multipliedValue": 168
+  },
+  {
+    "word": "ክፉ",
+    "frequency": 2,
+    "rank": 85,
+    "multipliedValue": 170
+  },
+  {
+    "word": "የዴህነት",
+    "frequency": 1,
+    "rank": 86,
+    "multipliedValue": 86
+  },
+  {
+    "word": "ቁራኛ",
+    "frequency": 1,
+    "rank": 87,
+    "multipliedValue": 87
+  },
+  {
+    "word": "ከጌታ",
+    "frequency": 1,
+    "rank": 88,
+    "multipliedValue": 88
+  },
+  {
+    "word": "የተወሇዯ",
+    "frequency": 1,
+    "rank": 89,
+    "multipliedValue": 89
+  },
+  {
+    "word": "ዴሀ",
+    "frequency": 1,
+    "rank": 90,
+    "multipliedValue": 90
+  },
+  {
+    "word": "አርሶ",
+    "frequency": 1,
+    "rank": 91,
+    "multipliedValue": 91
+  },
+  {
+    "word": "ወይም",
+    "frequency": 7,
+    "rank": 92,
+    "multipliedValue": 644
+  },
+  {
+    "word": "ነግድ",
+    "frequency": 1,
+    "rank": 93,
+    "multipliedValue": 93
+  },
+  {
+    "word": "እንዲይበሊ",
+    "frequency": 1,
+    "rank": 94,
+    "multipliedValue": 94
+  },
+  {
+    "word": "የመሰረተ",
+    "frequency": 1,
+    "rank": 95,
+    "multipliedValue": 95
+  },
+  {
+    "word": "ጌታው",
+    "frequency": 2,
+    "rank": 96,
+    "multipliedValue": 192
+  },
+  {
+    "word": "የገላ",
+    "frequency": 3,
+    "rank": 97,
+    "multipliedValue": 291
+  },
+  {
+    "word": "ሌጅ",
+    "frequency": 2,
+    "rank": 98,
+    "multipliedValue": 196
+  },
+  {
+    "word": "ገበሬ",
+    "frequency": 1,
+    "rank": 99,
+    "multipliedValue": 99
+  },
+  {
+    "word": "ነጋዳ",
+    "frequency": 3,
+    "rank": 100,
+    "multipliedValue": 300
+  },
+  {
+    "word": "ሆነዉ",
+    "frequency": 1,
+    "rank": 101,
+    "multipliedValue": 101
+  },
+  {
+    "word": "ይለኛሌ",
+    "frequency": 1,
+    "rank": 102,
+    "multipliedValue": 102
+  },
+  {
+    "word": "የጌትነት",
+    "frequency": 1,
+    "rank": 103,
+    "multipliedValue": 103
+  },
+  {
+    "word": "ስሜ",
+    "frequency": 1,
+    "rank": 104,
+    "multipliedValue": 104
+  },
+  {
+    "word": "በስራ",
+    "frequency": 1,
+    "rank": 105,
+    "multipliedValue": 105
+  },
+  {
+    "word": "ይጏሰቁሌብኛሌ",
+    "frequency": 1,
+    "rank": 106,
+    "multipliedValue": 106
+  },
+  {
+    "word": "በማሇት",
+    "frequency": 1,
+    "rank": 107,
+    "multipliedValue": 107
+  },
+  {
+    "word": "ኑሮዉን",
+    "frequency": 1,
+    "rank": 108,
+    "multipliedValue": 108
+  },
+  {
+    "word": "ሇማሻሻሌ",
+    "frequency": 1,
+    "rank": 109,
+    "multipliedValue": 109
+  },
+  {
+    "word": "ነጻነት",
+    "frequency": 1,
+    "rank": 110,
+    "multipliedValue": 110
+  },
+  {
+    "word": "የላሇው",
+    "frequency": 1,
+    "rank": 111,
+    "multipliedValue": 111
+  },
+  {
+    "word": "ያባቶቹ",
+    "frequency": 1,
+    "rank": 112,
+    "multipliedValue": 112
+  },
+  {
+    "word": "ስምና",
+    "frequency": 1,
+    "rank": 113,
+    "multipliedValue": 113
+  },
+  {
+    "word": "የራሱ",
+    "frequency": 1,
+    "rank": 114,
+    "multipliedValue": 114
+  },
+  {
+    "word": "ከንቱነት",
+    "frequency": 1,
+    "rank": 115,
+    "multipliedValue": 115
+  },
+  {
+    "word": "ግዞተኛ",
+    "frequency": 1,
+    "rank": 116,
+    "multipliedValue": 116
+  },
+  {
+    "word": "ይኖራሌ",
+    "frequency": 1,
+    "rank": 117,
+    "multipliedValue": 117
+  },
+  {
+    "word": "እንዱህ",
+    "frequency": 7,
+    "rank": 118,
+    "multipliedValue": 826
+  },
+  {
+    "word": "ካለት",
+    "frequency": 1,
+    "rank": 119,
+    "multipliedValue": 119
+  },
+  {
+    "word": "የስም",
+    "frequency": 1,
+    "rank": 120,
+    "multipliedValue": 120
+  },
+  {
+    "word": "ግዞተኞችና",
+    "frequency": 1,
+    "rank": 121,
+    "multipliedValue": 121
+  },
+  {
+    "word": "ከንቱዎች",
+    "frequency": 2,
+    "rank": 122,
+    "multipliedValue": 244
+  },
+  {
+    "word": "አንደ",
+    "frequency": 1,
+    "rank": 123,
+    "multipliedValue": 123
+  },
+  {
+    "word": "ያለት",
+    "frequency": 1,
+    "rank": 124,
+    "multipliedValue": 124
+  },
+  {
+    "word": "ሰርቶ",
+    "frequency": 1,
+    "rank": 125,
+    "multipliedValue": 125
+  },
+  {
+    "word": "ከመኖር",
+    "frequency": 1,
+    "rank": 126,
+    "multipliedValue": 126
+  },
+  {
+    "word": "ያባቶቻቸውን",
+    "frequency": 1,
+    "rank": 127,
+    "multipliedValue": 127
+  },
+  {
+    "word": "እንዯ",
+    "frequency": 7,
+    "rank": 128,
+    "multipliedValue": 896
+  },
+  {
+    "word": "ምጽዋት",
+    "frequency": 1,
+    "rank": 129,
+    "multipliedValue": 129
+  },
+  {
+    "word": "መቀበያ",
+    "frequency": 1,
+    "rank": 130,
+    "multipliedValue": 130
+  },
+  {
+    "word": "ቁና",
+    "frequency": 1,
+    "rank": 131,
+    "multipliedValue": 131
+  },
+  {
+    "word": "እያስቀዯሙ",
+    "frequency": 1,
+    "rank": 132,
+    "multipliedValue": 132
+  },
+  {
+    "word": "ሲሇምኑ",
+    "frequency": 1,
+    "rank": 133,
+    "multipliedValue": 133
+  },
+  {
+    "word": "መኖር",
+    "frequency": 1,
+    "rank": 134,
+    "multipliedValue": 134
+  },
+  {
+    "word": "ክብር",
+    "frequency": 1,
+    "rank": 135,
+    "multipliedValue": 135
+  },
+  {
+    "word": "ስሇሚመስሊቸው",
+    "frequency": 1,
+    "rank": 136,
+    "multipliedValue": 136
+  },
+  {
+    "word": "ካንዴ",
+    "frequency": 1,
+    "rank": 137,
+    "multipliedValue": 137
+  },
+  {
+    "word": "ጠፍ",
+    "frequency": 1,
+    "rank": 138,
+    "multipliedValue": 138
+  },
+  {
+    "word": "ጉሌበታቸው",
+    "frequency": 1,
+    "rank": 139,
+    "multipliedValue": 139
+  },
+  {
+    "word": "ከሚያገኙት",
+    "frequency": 1,
+    "rank": 140,
+    "multipliedValue": 140
+  },
+  {
+    "word": "እህሌና",
+    "frequency": 1,
+    "rank": 141,
+    "multipliedValue": 141
+  },
+  {
+    "word": "ትንሽ",
+    "frequency": 1,
+    "rank": 142,
+    "multipliedValue": 142
+  },
+  {
+    "word": "ገንዘብ",
+    "frequency": 2,
+    "rank": 143,
+    "multipliedValue": 286
+  },
+  {
+    "word": "ከየመኳንንቱም",
+    "frequency": 1,
+    "rank": 144,
+    "multipliedValue": 144
+  },
+  {
+    "word": "ሆነ",
+    "frequency": 4,
+    "rank": 145,
+    "multipliedValue": 580
+  },
+  {
+    "word": "ከየነጋዳው",
+    "frequency": 1,
+    "rank": 146,
+    "multipliedValue": 146
+  },
+  {
+    "word": "ሇምነው",
+    "frequency": 1,
+    "rank": 147,
+    "multipliedValue": 147
+  },
+  {
+    "word": "በሚያገኙት",
+    "frequency": 1,
+    "rank": 148,
+    "multipliedValue": 148
+  },
+  {
+    "word": "ምንጊዜም",
+    "frequency": 1,
+    "rank": 149,
+    "multipliedValue": 149
+  },
+  {
+    "word": "ቢሆን",
+    "frequency": 4,
+    "rank": 150,
+    "multipliedValue": 600
+  },
+  {
+    "word": "አንዴ",
+    "frequency": 4,
+    "rank": 151,
+    "multipliedValue": 604
+  },
+  {
+    "word": "የኮርቻ",
+    "frequency": 1,
+    "rank": 152,
+    "multipliedValue": 152
+  },
+  {
+    "word": "በቅልና",
+    "frequency": 1,
+    "rank": 153,
+    "multipliedValue": 153
+  },
+  {
+    "word": "የጃቸው",
+    "frequency": 1,
+    "rank": 154,
+    "multipliedValue": 154
+  },
+  {
+    "word": "ጠመንጃ",
+    "frequency": 1,
+    "rank": 155,
+    "multipliedValue": 155
+  },
+  {
+    "word": "አምጥተው",
+    "frequency": 1,
+    "rank": 156,
+    "multipliedValue": 156
+  },
+  {
+    "word": "አያውቁም",
+    "frequency": 1,
+    "rank": 157,
+    "multipliedValue": 157
+  },
+  {
+    "word": "በዚያ",
+    "frequency": 2,
+    "rank": 158,
+    "multipliedValue": 316
+  },
+  {
+    "word": "ከቤታቸው",
+    "frequency": 1,
+    "rank": 159,
+    "multipliedValue": 159
+  },
+  {
+    "word": "ስዴስት",
+    "frequency": 2,
+    "rank": 160,
+    "multipliedValue": 320
+  },
+  {
+    "word": "ወንዴና",
+    "frequency": 1,
+    "rank": 161,
+    "multipliedValue": 161
+  },
+  {
+    "word": "ሴት",
+    "frequency": 2,
+    "rank": 162,
+    "multipliedValue": 324
+  },
+  {
+    "word": "ልላዎች",
+    "frequency": 1,
+    "rank": 163,
+    "multipliedValue": 163
+  },
+  {
+    "word": "አይጠፉም",
+    "frequency": 1,
+    "rank": 164,
+    "multipliedValue": 164
+  },
+  {
+    "word": "ስሇዚህ",
+    "frequency": 3,
+    "rank": 165,
+    "multipliedValue": 495
+  },
+  {
+    "word": "ባይሆኑ",
+    "frequency": 1,
+    "rank": 166,
+    "multipliedValue": 166
+  },
+  {
+    "word": "መስሇው",
+    "frequency": 1,
+    "rank": 167,
+    "multipliedValue": 167
+  },
+  {
+    "word": "ጊዜ",
+    "frequency": 6,
+    "rank": 168,
+    "multipliedValue": 1008
+  },
+  {
+    "word": "አሌፎ",
+    "frequency": 1,
+    "rank": 169,
+    "multipliedValue": 169
+  },
+  {
+    "word": "የጭዋ",
+    "frequency": 1,
+    "rank": 170,
+    "multipliedValue": 170
+  },
+  {
+    "word": "በመብራት",
+    "frequency": 1,
+    "rank": 171,
+    "multipliedValue": 171
+  },
+  {
+    "word": "እዬተፈሇገ",
+    "frequency": 1,
+    "rank": 172,
+    "multipliedValue": 172
+  },
+  {
+    "word": "የሚሾምበት",
+    "frequency": 1,
+    "rank": 173,
+    "multipliedValue": 173
+  },
+  {
+    "word": "ቤተሰባቸውና",
+    "frequency": 1,
+    "rank": 174,
+    "multipliedValue": 174
+  },
+  {
+    "word": "አብረዋቸው",
+    "frequency": 1,
+    "rank": 175,
+    "multipliedValue": 175
+  },
+  {
+    "word": "ሇሚንገሊቱ",
+    "frequency": 1,
+    "rank": 176,
+    "multipliedValue": 176
+  },
+  {
+    "word": "አሽከሮቻቸው",
+    "frequency": 1,
+    "rank": 177,
+    "multipliedValue": 177
+  },
+  {
+    "word": "ሇማዴረግ",
+    "frequency": 1,
+    "rank": 178,
+    "multipliedValue": 178
+  },
+  {
+    "word": "የሚያስቡት",
+    "frequency": 1,
+    "rank": 179,
+    "multipliedValue": 179
+  },
+  {
+    "word": "ግሩም",
+    "frequency": 1,
+    "rank": 180,
+    "multipliedValue": 180
+  },
+  {
+    "word": "የሆነ",
+    "frequency": 2,
+    "rank": 181,
+    "multipliedValue": 362
+  },
+  {
+    "word": "መኖሩን",
+    "frequency": 1,
+    "rank": 182,
+    "multipliedValue": 182
+  },
+  {
+    "word": "ተስፋ",
+    "frequency": 3,
+    "rank": 183,
+    "multipliedValue": 549
+  },
+  {
+    "word": "እየሰጡ",
+    "frequency": 1,
+    "rank": 184,
+    "multipliedValue": 184
+  },
+  {
+    "word": "እንዱያ",
+    "frequency": 1,
+    "rank": 185,
+    "multipliedValue": 185
+  },
+  {
+    "word": "ያሇው",
+    "frequency": 4,
+    "rank": 186,
+    "multipliedValue": 744
+  },
+  {
+    "word": "መሌካም",
+    "frequency": 4,
+    "rank": 187,
+    "multipliedValue": 748
+  },
+  {
+    "word": "እስኪዯርስ",
+    "frequency": 1,
+    "rank": 188,
+    "multipliedValue": 188
+  },
+  {
+    "word": "ከብርቱ",
+    "frequency": 1,
+    "rank": 189,
+    "multipliedValue": 189
+  },
+  {
+    "word": "ትግስት",
+    "frequency": 1,
+    "rank": 190,
+    "multipliedValue": 190
+  },
+  {
+    "word": "በብርቱ",
+    "frequency": 1,
+    "rank": 191,
+    "multipliedValue": 191
+  },
+  {
+    "word": "የሚጠባበቁ",
+    "frequency": 1,
+    "rank": 192,
+    "multipliedValue": 192
+  },
+  {
+    "word": "ሌጃቸውን",
+    "frequency": 1,
+    "rank": 193,
+    "multipliedValue": 193
+  },
+  {
+    "word": "ዯመቀችን",
+    "frequency": 1,
+    "rank": 194,
+    "multipliedValue": 194
+  },
+  {
+    "word": "የዲሩሇት",
+    "frequency": 1,
+    "rank": 195,
+    "multipliedValue": 195
+  },
+  {
+    "word": "ጨርሶ",
+    "frequency": 1,
+    "rank": 196,
+    "multipliedValue": 196
+  },
+  {
+    "word": "ከላሊ",
+    "frequency": 1,
+    "rank": 197,
+    "multipliedValue": 197
+  },
+  {
+    "word": "ምንጭ",
+    "frequency": 1,
+    "rank": 198,
+    "multipliedValue": 198
+  },
+  {
+    "word": "የተቀዲ",
+    "frequency": 1,
+    "rank": 199,
+    "multipliedValue": 199
+  },
+  {
+    "word": "ወሊጆቹ",
+    "frequency": 1,
+    "rank": 200,
+    "multipliedValue": 200
+  },
+  {
+    "word": "እጅግ",
+    "frequency": 2,
+    "rank": 201,
+    "multipliedValue": 402
+  },
+  {
+    "word": "ዴሆች",
+    "frequency": 1,
+    "rank": 202,
+    "multipliedValue": 202
+  },
+  {
+    "word": "ስሇ",
+    "frequency": 2,
+    "rank": 203,
+    "multipliedValue": 406
+  },
+  {
+    "word": "ከትንሽነቱ",
+    "frequency": 1,
+    "rank": 204,
+    "multipliedValue": 204
+  },
+  {
+    "word": "ጀምሮ",
+    "frequency": 1,
+    "rank": 205,
+    "multipliedValue": 205
+  },
+  {
+    "word": "አገሩ",
+    "frequency": 1,
+    "rank": 206,
+    "multipliedValue": 206
+  },
+  {
+    "word": "ኤሌያስ",
+    "frequency": 1,
+    "rank": 207,
+    "multipliedValue": 207
+  },
+  {
+    "word": "የጥጃና",
+    "frequency": 1,
+    "rank": 208,
+    "multipliedValue": 208
+  },
+  {
+    "word": "የሊም",
+    "frequency": 1,
+    "rank": 209,
+    "multipliedValue": 209
+  },
+  {
+    "word": "እረኛነት",
+    "frequency": 1,
+    "rank": 210,
+    "multipliedValue": 210
+  },
+  {
+    "word": "እየተቀጠረ",
+    "frequency": 1,
+    "rank": 211,
+    "multipliedValue": 211
+  },
+  {
+    "word": "አዯገ",
+    "frequency": 1,
+    "rank": 212,
+    "multipliedValue": 212
+  },
+  {
+    "word": "ሁዋሊም",
+    "frequency": 1,
+    "rank": 213,
+    "multipliedValue": 213
+  },
+  {
+    "word": "የነጋዳ",
+    "frequency": 3,
+    "rank": 214,
+    "multipliedValue": 642
+  },
+  {
+    "word": "ጎረዯማን",
+    "frequency": 1,
+    "rank": 215,
+    "multipliedValue": 215
+  },
+  {
+    "word": "ሇጌታው",
+    "frequency": 1,
+    "rank": 216,
+    "multipliedValue": 216
+  },
+  {
+    "word": "አጋሰሶችና",
+    "frequency": 1,
+    "rank": 217,
+    "multipliedValue": 217
+  },
+  {
+    "word": "ሇጭነት",
+    "frequency": 1,
+    "rank": 218,
+    "multipliedValue": 218
+  },
+  {
+    "word": "እቃው",
+    "frequency": 1,
+    "rank": 219,
+    "multipliedValue": 219
+  },
+  {
+    "word": "በመጠንቀቁና",
+    "frequency": 1,
+    "rank": 220,
+    "multipliedValue": 220
+  },
+  {
+    "word": "በትጋቱም",
+    "frequency": 1,
+    "rank": 221,
+    "multipliedValue": 221
+  },
+  {
+    "word": "በብርታቱ",
+    "frequency": 1,
+    "rank": 222,
+    "multipliedValue": 222
+  },
+  {
+    "word": "የተመሰገነ",
+    "frequency": 1,
+    "rank": 223,
+    "multipliedValue": 223
+  },
+  {
+    "word": "ከመሆኑ",
+    "frequency": 1,
+    "rank": 224,
+    "multipliedValue": 224
+  },
+  {
+    "word": "ላሊ",
+    "frequency": 1,
+    "rank": 225,
+    "multipliedValue": 225
+  },
+  {
+    "word": "ሳይሰማ",
+    "frequency": 1,
+    "rank": 226,
+    "multipliedValue": 226
+  },
+  {
+    "word": "በስጦታ",
+    "frequency": 1,
+    "rank": 227,
+    "multipliedValue": 227
+  },
+  {
+    "word": "ተኩሶ",
+    "frequency": 1,
+    "rank": 228,
+    "multipliedValue": 228
+  },
+  {
+    "word": "ይስታሌ",
+    "frequency": 1,
+    "rank": 229,
+    "multipliedValue": 229
+  },
+  {
+    "word": "የማይባሌ",
+    "frequency": 1,
+    "rank": 230,
+    "multipliedValue": 230
+  },
+  {
+    "word": "ጥሩ",
+    "frequency": 1,
+    "rank": 231,
+    "multipliedValue": 231
+  },
+  {
+    "word": "ተኩዋሽ",
+    "frequency": 1,
+    "rank": 232,
+    "multipliedValue": 232
+  },
+  {
+    "word": "ነበረ",
+    "frequency": 1,
+    "rank": 233,
+    "multipliedValue": 233
+  },
+  {
+    "word": "በነጋዳዎች",
+    "frequency": 1,
+    "rank": 234,
+    "multipliedValue": 234
+  },
+  {
+    "word": "መሀከሌ",
+    "frequency": 4,
+    "rank": 235,
+    "multipliedValue": 940
+  },
+  {
+    "word": "ጉዋዯኛ",
+    "frequency": 1,
+    "rank": 236,
+    "multipliedValue": 236
+  },
+  {
+    "word": "እንጂ",
+    "frequency": 2,
+    "rank": 237,
+    "multipliedValue": 474
+  },
+  {
+    "word": "እንዲሽከር",
+    "frequency": 1,
+    "rank": 238,
+    "multipliedValue": 238
+  },
+  {
+    "word": "አይታይም",
+    "frequency": 1,
+    "rank": 239,
+    "multipliedValue": 239
+  },
+  {
+    "word": "አሽከር",
+    "frequency": 2,
+    "rank": 240,
+    "multipliedValue": 480
+  },
+  {
+    "word": "በነበረበት",
+    "frequency": 1,
+    "rank": 241,
+    "multipliedValue": 241
+  },
+  {
+    "word": "እረፍት",
+    "frequency": 1,
+    "rank": 242,
+    "multipliedValue": 242
+  },
+  {
+    "word": "ሲያገኝ",
+    "frequency": 1,
+    "rank": 243,
+    "multipliedValue": 243
+  },
+  {
+    "word": "ጠምንጃ",
+    "frequency": 1,
+    "rank": 244,
+    "multipliedValue": 244
+  },
+  {
+    "word": "እየተዋሰ",
+    "frequency": 1,
+    "rank": 245,
+    "multipliedValue": 245
+  },
+  {
+    "word": "ነብር",
+    "frequency": 1,
+    "rank": 246,
+    "multipliedValue": 246
+  },
+  {
+    "word": "ይገዴሌና",
+    "frequency": 1,
+    "rank": 247,
+    "multipliedValue": 247
+  },
+  {
+    "word": "የቆዲውን",
+    "frequency": 1,
+    "rank": 248,
+    "multipliedValue": 248
+  },
+  {
+    "word": "አዱስ",
+    "frequency": 2,
+    "rank": 249,
+    "multipliedValue": 498
+  },
+  {
+    "word": "ኧብባ",
+    "frequency": 1,
+    "rank": 250,
+    "multipliedValue": 250
+  },
+  {
+    "word": "ከሚያስጭነው",
+    "frequency": 1,
+    "rank": 251,
+    "multipliedValue": 251
+  },
+  {
+    "word": "የበሬ",
+    "frequency": 1,
+    "rank": 252,
+    "multipliedValue": 252
+  },
+  {
+    "word": "ቆዲም",
+    "frequency": 1,
+    "rank": 253,
+    "multipliedValue": 253
+  },
+  {
+    "word": "የፍየሌ",
+    "frequency": 1,
+    "rank": 254,
+    "multipliedValue": 254
+  },
+  {
+    "word": "ላጦ",
+    "frequency": 1,
+    "rank": 255,
+    "multipliedValue": 255
+  },
+  {
+    "word": "ሸጉጦ",
+    "frequency": 1,
+    "rank": 256,
+    "multipliedValue": 256
+  },
+  {
+    "word": "ወስድ",
+    "frequency": 1,
+    "rank": 257,
+    "multipliedValue": 257
+  },
+  {
+    "word": "ይሸጣሌ",
+    "frequency": 1,
+    "rank": 258,
+    "multipliedValue": 258
+  },
+  {
+    "word": "ዓመት",
+    "frequency": 1,
+    "rank": 259,
+    "multipliedValue": 259
+  },
+  {
+    "word": "ያክሌ",
+    "frequency": 2,
+    "rank": 260,
+    "multipliedValue": 520
+  },
+  {
+    "word": "በኤሌያስና",
+    "frequency": 4,
+    "rank": 261,
+    "multipliedValue": 1044
+  },
+  {
+    "word": "በአዱስ",
+    "frequency": 1,
+    "rank": 262,
+    "multipliedValue": 262
+  },
+  {
+    "word": "አበባ",
+    "frequency": 1,
+    "rank": 263,
+    "multipliedValue": 263
+  },
+  {
+    "word": "ከተመሊሇሰ",
+    "frequency": 1,
+    "rank": 264,
+    "multipliedValue": 264
+  },
+  {
+    "word": "በሁዋሊ",
+    "frequency": 3,
+    "rank": 265,
+    "multipliedValue": 795
+  },
+  {
+    "word": "ከዯመወዙ",
+    "frequency": 1,
+    "rank": 266,
+    "multipliedValue": 266
+  },
+  {
+    "word": "ይሌቅ",
+    "frequency": 1,
+    "rank": 267,
+    "multipliedValue": 267
+  },
+  {
+    "word": "ከነብር",
+    "frequency": 1,
+    "rank": 268,
+    "multipliedValue": 268
+  },
+  {
+    "word": "ቆዲ",
+    "frequency": 1,
+    "rank": 269,
+    "multipliedValue": 269
+  },
+  {
+    "word": "ሽያሽ",
+    "frequency": 1,
+    "rank": 270,
+    "multipliedValue": 270
+  },
+  {
+    "word": "ያጠራቀመው",
+    "frequency": 1,
+    "rank": 271,
+    "multipliedValue": 271
+  },
+  {
+    "word": "ብር",
+    "frequency": 1,
+    "rank": 272,
+    "multipliedValue": 272
+  },
+  {
+    "word": "ራሱን",
+    "frequency": 2,
+    "rank": 273,
+    "multipliedValue": 546
+  },
+  {
+    "word": "የቻሇ",
+    "frequency": 1,
+    "rank": 274,
+    "multipliedValue": 274
+  },
+  {
+    "word": "አዯረገው",
+    "frequency": 1,
+    "rank": 275,
+    "multipliedValue": 275
+  },
+  {
+    "word": "የቆዲ",
+    "frequency": 1,
+    "rank": 276,
+    "multipliedValue": 276
+  },
+  {
+    "word": "ቱጃሮች",
+    "frequency": 1,
+    "rank": 277,
+    "multipliedValue": 277
+  },
+  {
+    "word": "ስሙ",
+    "frequency": 1,
+    "rank": 278,
+    "multipliedValue": 278
+  },
+  {
+    "word": "የተጠራ",
+    "frequency": 1,
+    "rank": 279,
+    "multipliedValue": 279
+  },
+  {
+    "word": "ሀብታም",
+    "frequency": 2,
+    "rank": 280,
+    "multipliedValue": 560
+  },
+  {
+    "word": "ሇመሆን",
+    "frequency": 1,
+    "rank": 281,
+    "multipliedValue": 281
+  },
+  {
+    "word": "አሌወሰዯበትም",
+    "frequency": 1,
+    "rank": 282,
+    "multipliedValue": 282
+  },
+  {
+    "word": "ባካባቢው",
+    "frequency": 3,
+    "rank": 283,
+    "multipliedValue": 849
+  },
+  {
+    "word": "ባሌ",
+    "frequency": 2,
+    "rank": 284,
+    "multipliedValue": 568
+  },
+  {
+    "word": "እንዯሆነ",
+    "frequency": 4,
+    "rank": 285,
+    "multipliedValue": 1140
+  },
+  {
+    "word": "በሰጋሩ",
+    "frequency": 1,
+    "rank": 286,
+    "multipliedValue": 286
+  },
+  {
+    "word": "ተቀምጦ",
+    "frequency": 1,
+    "rank": 287,
+    "multipliedValue": 287
+  },
+  {
+    "word": "ፈረሱን",
+    "frequency": 1,
+    "rank": 288,
+    "multipliedValue": 288
+  },
+  {
+    "word": "ቀሚስ",
+    "frequency": 1,
+    "rank": 289,
+    "multipliedValue": 289
+  },
+  {
+    "word": "አስሇብሶ",
+    "frequency": 1,
+    "rank": 290,
+    "multipliedValue": 290
+  },
+  {
+    "word": "በፊት",
+    "frequency": 1,
+    "rank": 291,
+    "multipliedValue": 291
+  },
+  {
+    "word": "እያሳበ",
+    "frequency": 1,
+    "rank": 292,
+    "multipliedValue": 292
+  },
+  {
+    "word": "ባምስት",
+    "frequency": 1,
+    "rank": 293,
+    "multipliedValue": 293
+  },
+  {
+    "word": "ባሇብረትና",
+    "frequency": 1,
+    "rank": 294,
+    "multipliedValue": 294
+  },
+  {
+    "word": "በብዙ",
+    "frequency": 1,
+    "rank": 295,
+    "multipliedValue": 295
+  },
+  {
+    "word": "ጀላ",
+    "frequency": 1,
+    "rank": 296,
+    "multipliedValue": 296
+  },
+  {
+    "word": "ታጅቦ",
+    "frequency": 1,
+    "rank": 297,
+    "multipliedValue": 297
+  },
+  {
+    "word": "ሲሄዴ",
+    "frequency": 1,
+    "rank": 298,
+    "multipliedValue": 298
+  },
+  {
+    "word": "የማይቀናበት",
+    "frequency": 1,
+    "rank": 299,
+    "multipliedValue": 299
+  },
+  {
+    "word": "አሌነበረም",
+    "frequency": 3,
+    "rank": 300,
+    "multipliedValue": 900
+  },
+  {
+    "word": "ዴግስ",
+    "frequency": 1,
+    "rank": 301,
+    "multipliedValue": 301
+  },
+  {
+    "word": "ሲያዯርግ",
+    "frequency": 1,
+    "rank": 302,
+    "multipliedValue": 302
+  },
+  {
+    "word": "ሰፊ",
+    "frequency": 1,
+    "rank": 303,
+    "multipliedValue": 303
+  },
+  {
+    "word": "ዲስ",
+    "frequency": 1,
+    "rank": 304,
+    "multipliedValue": 304
+  },
+  {
+    "word": "አስጥል",
+    "frequency": 2,
+    "rank": 305,
+    "multipliedValue": 610
+  },
+  {
+    "word": "ሇተሰበሰበው",
+    "frequency": 1,
+    "rank": 306,
+    "multipliedValue": 306
+  },
+  {
+    "word": "ስጋ",
+    "frequency": 1,
+    "rank": 307,
+    "multipliedValue": 307
+  },
+  {
+    "word": "ጎመን",
+    "frequency": 1,
+    "rank": 308,
+    "multipliedValue": 308
+  },
+  {
+    "word": "አብሌጦ",
+    "frequency": 1,
+    "rank": 309,
+    "multipliedValue": 309
+  },
+  {
+    "word": "ጠጅና",
+    "frequency": 1,
+    "rank": 310,
+    "multipliedValue": 310
+  },
+  {
+    "word": "አረቄ",
+    "frequency": 1,
+    "rank": 311,
+    "multipliedValue": 311
+  },
+  {
+    "word": "ውሀ",
+    "frequency": 1,
+    "rank": 312,
+    "multipliedValue": 312
+  },
+  {
+    "word": "አጠጥቶ",
+    "frequency": 2,
+    "rank": 313,
+    "multipliedValue": 626
+  },
+  {
+    "word": "ዴግሱ",
+    "frequency": 1,
+    "rank": 314,
+    "multipliedValue": 314
+  },
+  {
+    "word": "ተዝካር",
+    "frequency": 1,
+    "rank": 315,
+    "multipliedValue": 315
+  },
+  {
+    "word": "ያሇ",
+    "frequency": 4,
+    "rank": 316,
+    "multipliedValue": 1264
+  },
+  {
+    "word": "የሀዘን",
+    "frequency": 1,
+    "rank": 317,
+    "multipliedValue": 317
+  },
+  {
+    "word": "መታሰቢያ",
+    "frequency": 1,
+    "rank": 318,
+    "multipliedValue": 318
+  },
+  {
+    "word": "ያሌሆነ",
+    "frequency": 1,
+    "rank": 319,
+    "multipliedValue": 319
+  },
+  {
+    "word": "አዝማሪውን",
+    "frequency": 1,
+    "rank": 320,
+    "multipliedValue": 320
+  },
+  {
+    "word": "አቅራሪውን",
+    "frequency": 1,
+    "rank": 321,
+    "multipliedValue": 321
+  },
+  {
+    "word": "ፈካሪውን",
+    "frequency": 1,
+    "rank": 322,
+    "multipliedValue": 322
+  },
+  {
+    "word": "ሸሌሞ",
+    "frequency": 1,
+    "rank": 323,
+    "multipliedValue": 323
+  },
+  {
+    "word": "ሲሸኝ",
+    "frequency": 1,
+    "rank": 324,
+    "multipliedValue": 324
+  },
+  {
+    "word": "የማይገረም",
+    "frequency": 1,
+    "rank": 325,
+    "multipliedValue": 325
+  },
+  {
+    "word": "ላባ",
+    "frequency": 1,
+    "rank": 326,
+    "multipliedValue": 326
+  },
+  {
+    "word": "ወንበዳ",
+    "frequency": 1,
+    "rank": 327,
+    "multipliedValue": 327
+  },
+  {
+    "word": "ተነስቶ",
+    "frequency": 1,
+    "rank": 328,
+    "multipliedValue": 328
+  },
+  {
+    "word": "ከብት",
+    "frequency": 1,
+    "rank": 329,
+    "multipliedValue": 329
+  },
+  {
+    "word": "ተሰረቀ",
+    "frequency": 1,
+    "rank": 330,
+    "multipliedValue": 330
+  },
+  {
+    "word": "ቤት",
+    "frequency": 2,
+    "rank": 331,
+    "multipliedValue": 662
+  },
+  {
+    "word": "ተቃጠሇ",
+    "frequency": 1,
+    "rank": 332,
+    "multipliedValue": 332
+  },
+  {
+    "word": "የተቃሇ",
+    "frequency": 1,
+    "rank": 333,
+    "multipliedValue": 333
+  },
+  {
+    "word": "ካሸከሮቹ",
+    "frequency": 1,
+    "rank": 334,
+    "multipliedValue": 334
+  },
+  {
+    "word": "ላባውን",
+    "frequency": 1,
+    "rank": 335,
+    "multipliedValue": 335
+  },
+  {
+    "word": "ወንበዳውን",
+    "frequency": 1,
+    "rank": 336,
+    "multipliedValue": 336
+  },
+  {
+    "word": "አጣዴፎ",
+    "frequency": 1,
+    "rank": 337,
+    "multipliedValue": 337
+  },
+  {
+    "word": "ሳይዝ",
+    "frequency": 1,
+    "rank": 338,
+    "multipliedValue": 338
+  },
+  {
+    "word": "አያርፍም",
+    "frequency": 1,
+    "rank": 339,
+    "multipliedValue": 339
+  },
+  {
+    "word": "ስሇሚባሌ",
+    "frequency": 1,
+    "rank": 340,
+    "multipliedValue": 340
+  },
+  {
+    "word": "የማይፈራው",
+    "frequency": 1,
+    "rank": 341,
+    "multipliedValue": 341
+  },
+  {
+    "word": "ተገኝ",
+    "frequency": 2,
+    "rank": 342,
+    "multipliedValue": 684
+  },
+  {
+    "word": "በሀብቱና",
+    "frequency": 1,
+    "rank": 343,
+    "multipliedValue": 343
+  },
+  {
+    "word": "በጉሌበቱ",
+    "frequency": 1,
+    "rank": 344,
+    "multipliedValue": 344
+  },
+  {
+    "word": "የሚፈራና",
+    "frequency": 2,
+    "rank": 345,
+    "multipliedValue": 690
+  },
+  {
+    "word": "የሚከበር",
+    "frequency": 2,
+    "rank": 346,
+    "multipliedValue": 692
+  },
+  {
+    "word": "ሇሱ",
+    "frequency": 1,
+    "rank": 347,
+    "multipliedValue": 347
+  },
+  {
+    "word": "ይህ",
+    "frequency": 4,
+    "rank": 348,
+    "multipliedValue": 1392
+  },
+  {
+    "word": "አሌበቃውም",
+    "frequency": 1,
+    "rank": 349,
+    "multipliedValue": 349
+  },
+  {
+    "word": "አሊጠገበውም",
+    "frequency": 1,
+    "rank": 350,
+    "multipliedValue": 350
+  },
+  {
+    "word": "ሀብትና",
+    "frequency": 1,
+    "rank": 351,
+    "multipliedValue": 351
+  },
+  {
+    "word": "ጉሌበት",
+    "frequency": 1,
+    "rank": 352,
+    "multipliedValue": 352
+  },
+  {
+    "word": "መሆኑ",
+    "frequency": 2,
+    "rank": 353,
+    "multipliedValue": 706
+  },
+  {
+    "word": "ሇሌቡ",
+    "frequency": 1,
+    "rank": 354,
+    "multipliedValue": 354
+  },
+  {
+    "word": "ሙለ",
+    "frequency": 2,
+    "rank": 355,
+    "multipliedValue": 710
+  },
+  {
+    "word": "ዯስታ",
+    "frequency": 1,
+    "rank": 356,
+    "multipliedValue": 356
+  },
+  {
+    "word": "ሇህሉናቸው",
+    "frequency": 1,
+    "rank": 357,
+    "multipliedValue": 357
+  },
+  {
+    "word": "እረፍትን",
+    "frequency": 1,
+    "rank": 358,
+    "multipliedValue": 358
+  },
+  {
+    "word": "ሉሰጠው",
+    "frequency": 1,
+    "rank": 359,
+    "multipliedValue": 359
+  },
+  {
+    "word": "አሌቻሇም",
+    "frequency": 1,
+    "rank": 360,
+    "multipliedValue": 360
+  },
+  {
+    "word": "አብሌቶ",
+    "frequency": 1,
+    "rank": 361,
+    "multipliedValue": 361
+  },
+  {
+    "word": "ተቸገርሁ",
+    "frequency": 1,
+    "rank": 362,
+    "multipliedValue": 362
+  },
+  {
+    "word": "ሇሚሇው",
+    "frequency": 1,
+    "rank": 363,
+    "multipliedValue": 363
+  },
+  {
+    "word": "ሰጥቶ",
+    "frequency": 1,
+    "rank": 364,
+    "multipliedValue": 364
+  },
+  {
+    "word": "የሚሸኘው",
+    "frequency": 1,
+    "rank": 365,
+    "multipliedValue": 365
+  },
+  {
+    "word": "ዘወር",
+    "frequency": 2,
+    "rank": 366,
+    "multipliedValue": 732
+  },
+  {
+    "word": "ብል",
+    "frequency": 2,
+    "rank": 367,
+    "multipliedValue": 734
+  },
+  {
+    "word": "የማያማውና",
+    "frequency": 1,
+    "rank": 368,
+    "multipliedValue": 368
+  },
+  {
+    "word": "የማያሽሙዋጥጠው",
+    "frequency": 1,
+    "rank": 369,
+    "multipliedValue": 369
+  },
+  {
+    "word": "መሆኑን",
+    "frequency": 1,
+    "rank": 370,
+    "multipliedValue": 370
+  },
+  {
+    "word": "እንዳት",
+    "frequency": 1,
+    "rank": 371,
+    "multipliedValue": 371
+  },
+  {
+    "word": "ያውቃሌ",
+    "frequency": 2,
+    "rank": 372,
+    "multipliedValue": 744
+  },
+  {
+    "word": "እንዯሱ",
+    "frequency": 1,
+    "rank": 373,
+    "multipliedValue": 373
+  },
+  {
+    "word": "ችግርን",
+    "frequency": 1,
+    "rank": 374,
+    "multipliedValue": 374
+  },
+  {
+    "word": "ሀብታሞች",
+    "frequency": 1,
+    "rank": 375,
+    "multipliedValue": 375
+  },
+  {
+    "word": "የሆኑ",
+    "frequency": 2,
+    "rank": 376,
+    "multipliedValue": 752
+  },
+  {
+    "word": "ሇጋሶች",
+    "frequency": 1,
+    "rank": 377,
+    "multipliedValue": 377
+  },
+  {
+    "word": "አይቶ",
+    "frequency": 1,
+    "rank": 378,
+    "multipliedValue": 378
+  },
+  {
+    "word": "አያውቅ",
+    "frequency": 1,
+    "rank": 379,
+    "multipliedValue": 379
+  },
+  {
+    "word": "ያዱስ",
+    "frequency": 1,
+    "rank": 380,
+    "multipliedValue": 380
+  },
+  {
+    "word": "ባሇጌ",
+    "frequency": 2,
+    "rank": 381,
+    "multipliedValue": 762
+  },
+  {
+    "word": "በገንዘብ",
+    "frequency": 1,
+    "rank": 382,
+    "multipliedValue": 382
+  },
+  {
+    "word": "እንዲፈር",
+    "frequency": 1,
+    "rank": 383,
+    "multipliedValue": 383
+  },
+  {
+    "word": "ይጫወታሌ",
+    "frequency": 1,
+    "rank": 384,
+    "multipliedValue": 384
+  },
+  {
+    "word": "አዬ",
+    "frequency": 1,
+    "rank": 385,
+    "multipliedValue": 385
+  },
+  {
+    "word": "ጉዴ",
+    "frequency": 1,
+    "rank": 386,
+    "multipliedValue": 386
+  },
+  {
+    "word": "ዯሀ",
+    "frequency": 1,
+    "rank": 387,
+    "multipliedValue": 387
+  },
+  {
+    "word": "ሲከብር",
+    "frequency": 1,
+    "rank": 388,
+    "multipliedValue": 388
+  },
+  {
+    "word": "የሚዯኸይ",
+    "frequency": 1,
+    "rank": 389,
+    "multipliedValue": 389
+  },
+  {
+    "word": "አይመጽሇውም",
+    "frequency": 1,
+    "rank": 390,
+    "multipliedValue": 390
+  },
+  {
+    "word": "እየተባለ",
+    "frequency": 1,
+    "rank": 391,
+    "multipliedValue": 391
+  },
+  {
+    "word": "ሲታሙ",
+    "frequency": 1,
+    "rank": 392,
+    "multipliedValue": 392
+  },
+  {
+    "word": "በዴህነቱ",
+    "frequency": 1,
+    "rank": 393,
+    "multipliedValue": 393
+  },
+  {
+    "word": "ሲሰማ",
+    "frequency": 1,
+    "rank": 394,
+    "multipliedValue": 394
+  },
+  {
+    "word": "ኖሮዋሌ",
+    "frequency": 1,
+    "rank": 395,
+    "multipliedValue": 395
+  },
+  {
+    "word": "እነሱን",
+    "frequency": 1,
+    "rank": 396,
+    "multipliedValue": 396
+  },
+  {
+    "word": "ከፊቱ",
+    "frequency": 1,
+    "rank": 397,
+    "multipliedValue": 397
+  },
+  {
+    "word": "ሲለ",
+    "frequency": 1,
+    "rank": 398,
+    "multipliedValue": 398
+  },
+  {
+    "word": "እንዲያሙት",
+    "frequency": 1,
+    "rank": 399,
+    "multipliedValue": 399
+  },
+  {
+    "word": "በምን",
+    "frequency": 1,
+    "rank": 400,
+    "multipliedValue": 400
+  },
+  {
+    "word": "ጥርጥር",
+    "frequency": 1,
+    "rank": 401,
+    "multipliedValue": 401
+  },
+  {
+    "word": "ያሙታሌ",
+    "frequency": 1,
+    "rank": 402,
+    "multipliedValue": 402
+  },
+  {
+    "word": "ሇዚህ",
+    "frequency": 2,
+    "rank": 403,
+    "multipliedValue": 806
+  },
+  {
+    "word": "መዴኃኒቱ",
+    "frequency": 1,
+    "rank": 404,
+    "multipliedValue": 404
+  },
+  {
+    "word": "ፍቱን",
+    "frequency": 1,
+    "rank": 405,
+    "multipliedValue": 405
+  },
+  {
+    "word": "አብነት",
+    "frequency": 1,
+    "rank": 406,
+    "multipliedValue": 406
+  },
+  {
+    "word": "የሚቻሌ",
+    "frequency": 1,
+    "rank": 407,
+    "multipliedValue": 407
+  },
+  {
+    "word": "ከቅዴመ",
+    "frequency": 1,
+    "rank": 408,
+    "multipliedValue": 408
+  },
+  {
+    "word": "በሊይ",
+    "frequency": 2,
+    "rank": 409,
+    "multipliedValue": 818
+  },
+  {
+    "word": "እንዱያው",
+    "frequency": 1,
+    "rank": 410,
+    "multipliedValue": 410
+  },
+  {
+    "word": "ካርባና",
+    "frequency": 1,
+    "rank": 411,
+    "multipliedValue": 411
+  },
+  {
+    "word": "ካምሳ",
+    "frequency": 1,
+    "rank": 412,
+    "multipliedValue": 412
+  },
+  {
+    "word": "ትውሌዴ",
+    "frequency": 1,
+    "rank": 413,
+    "multipliedValue": 413
+  },
+  {
+    "word": "እንኩዋ",
+    "frequency": 2,
+    "rank": 414,
+    "multipliedValue": 828
+  },
+  {
+    "word": "ሲሆን",
+    "frequency": 2,
+    "rank": 415,
+    "multipliedValue": 830
+  },
+  {
+    "word": "በቀጥታ",
+    "frequency": 1,
+    "rank": 416,
+    "multipliedValue": 416
+  },
+  {
+    "word": "ያሇዚያም",
+    "frequency": 1,
+    "rank": 417,
+    "multipliedValue": 417
+  },
+  {
+    "word": "በጎን",
+    "frequency": 1,
+    "rank": 418,
+    "multipliedValue": 418
+  },
+  {
+    "word": "የማእረግ",
+    "frequency": 1,
+    "rank": 419,
+    "multipliedValue": 419
+  },
+  {
+    "word": "የነበረው",
+    "frequency": 1,
+    "rank": 420,
+    "multipliedValue": 420
+  },
+  {
+    "word": "በቤቱ",
+    "frequency": 1,
+    "rank": 421,
+    "multipliedValue": 421
+  },
+  {
+    "word": "ቢገኝ",
+    "frequency": 1,
+    "rank": 422,
+    "multipliedValue": 422
+  },
+  {
+    "word": "እሱን",
+    "frequency": 1,
+    "rank": 423,
+    "multipliedValue": 423
+  },
+  {
+    "word": "ምንም",
+    "frequency": 2,
+    "rank": 424,
+    "multipliedValue": 848
+  },
+  {
+    "word": "ስቦ",
+    "frequency": 1,
+    "rank": 425,
+    "multipliedValue": 425
+  },
+  {
+    "word": "አምጥቶ",
+    "frequency": 1,
+    "rank": 426,
+    "multipliedValue": 426
+  },
+  {
+    "word": "ከራሱ",
+    "frequency": 1,
+    "rank": 427,
+    "multipliedValue": 427
+  },
+  {
+    "word": "ማያያዝ",
+    "frequency": 1,
+    "rank": 428,
+    "multipliedValue": 428
+  },
+  {
+    "word": "ዋናው",
+    "frequency": 1,
+    "rank": 429,
+    "multipliedValue": 429
+  },
+  {
+    "word": "ባሇ",
+    "frequency": 2,
+    "rank": 430,
+    "multipliedValue": 860
+  },
+  {
+    "word": "ማዕረግ",
+    "frequency": 2,
+    "rank": 431,
+    "multipliedValue": 862
+  },
+  {
+    "word": "ከቤቱ",
+    "frequency": 1,
+    "rank": 432,
+    "multipliedValue": 432
+  },
+  {
+    "word": "መገኘቱ",
+    "frequency": 1,
+    "rank": 433,
+    "multipliedValue": 433
+  },
+  {
+    "word": "መራቁ",
+    "frequency": 1,
+    "rank": 434,
+    "multipliedValue": 434
+  },
+  {
+    "word": "ግዳሇም",
+    "frequency": 1,
+    "rank": 435,
+    "multipliedValue": 435
+  },
+  {
+    "word": "ብዙዎችን",
+    "frequency": 1,
+    "rank": 436,
+    "multipliedValue": 436
+  },
+  {
+    "word": "ትውሌድች",
+    "frequency": 1,
+    "rank": 437,
+    "multipliedValue": 437
+  },
+  {
+    "word": "ከመካከሌ",
+    "frequency": 1,
+    "rank": 438,
+    "multipliedValue": 438
+  },
+  {
+    "word": "አንስቶ",
+    "frequency": 1,
+    "rank": 439,
+    "multipliedValue": 439
+  },
+  {
+    "word": "ወዱያ",
+    "frequency": 1,
+    "rank": 440,
+    "multipliedValue": 440
+  },
+  {
+    "word": "ጥል",
+    "frequency": 1,
+    "rank": 441,
+    "multipliedValue": 441
+  },
+  {
+    "word": "ማቀራረብ",
+    "frequency": 1,
+    "rank": 442,
+    "multipliedValue": 442
+  },
+  {
+    "word": "ይቻሊሌ",
+    "frequency": 2,
+    "rank": 443,
+    "multipliedValue": 886
+  },
+  {
+    "word": "ከዚያ",
+    "frequency": 3,
+    "rank": 444,
+    "multipliedValue": 1332
+  },
+  {
+    "word": "አያቴ",
+    "frequency": 1,
+    "rank": 445,
+    "multipliedValue": 445
+  },
+  {
+    "word": "ፊታውራሪ",
+    "frequency": 1,
+    "rank": 446,
+    "multipliedValue": 446
+  },
+  {
+    "word": "ቀኛዝማች",
+    "frequency": 1,
+    "rank": 447,
+    "multipliedValue": 447
+  },
+  {
+    "word": "እገላ",
+    "frequency": 1,
+    "rank": 448,
+    "multipliedValue": 448
+  },
+  {
+    "word": "ይለ",
+    "frequency": 1,
+    "rank": 449,
+    "multipliedValue": 449
+  },
+  {
+    "word": "ያዯርጉ",
+    "frequency": 1,
+    "rank": 450,
+    "multipliedValue": 450
+  },
+  {
+    "word": "እየተባሇ",
+    "frequency": 1,
+    "rank": 451,
+    "multipliedValue": 451
+  },
+  {
+    "word": "ማውራት",
+    "frequency": 1,
+    "rank": 452,
+    "multipliedValue": 452
+  },
+  {
+    "word": "የሚያማ",
+    "frequency": 1,
+    "rank": 453,
+    "multipliedValue": 453
+  },
+  {
+    "word": "አይኖርም",
+    "frequency": 1,
+    "rank": 454,
+    "multipliedValue": 454
+  },
+  {
+    "word": "ቢኖርም",
+    "frequency": 1,
+    "rank": 455,
+    "multipliedValue": 455
+  },
+  {
+    "word": "ራሱ",
+    "frequency": 1,
+    "rank": 456,
+    "multipliedValue": 456
+  },
+  {
+    "word": "አሊዋቂ",
+    "frequency": 1,
+    "rank": 457,
+    "multipliedValue": 457
+  },
+  {
+    "word": "በታምራት",
+    "frequency": 1,
+    "rank": 458,
+    "multipliedValue": 458
+  },
+  {
+    "word": "ተፈሌጎ",
+    "frequency": 1,
+    "rank": 459,
+    "multipliedValue": 459
+  },
+  {
+    "word": "ሉገኝ",
+    "frequency": 1,
+    "rank": 460,
+    "multipliedValue": 460
+  },
+  {
+    "word": "አሌተቻሇም",
+    "frequency": 1,
+    "rank": 461,
+    "multipliedValue": 461
+  },
+  {
+    "word": "ከባሇቁጥር",
+    "frequency": 1,
+    "rank": 462,
+    "multipliedValue": 462
+  },
+  {
+    "word": "ዘመዴ",
+    "frequency": 1,
+    "rank": 463,
+    "multipliedValue": 463
+  },
+  {
+    "word": "በቀር",
+    "frequency": 1,
+    "rank": 464,
+    "multipliedValue": 464
+  },
+  {
+    "word": "ከማንም",
+    "frequency": 1,
+    "rank": 465,
+    "multipliedValue": 465
+  },
+  {
+    "word": "የሚያወያዩት",
+    "frequency": 1,
+    "rank": 466,
+    "multipliedValue": 466
+  },
+  {
+    "word": "ስሇሆነ",
+    "frequency": 1,
+    "rank": 467,
+    "multipliedValue": 467
+  },
+  {
+    "word": "መቁጠር",
+    "frequency": 1,
+    "rank": 468,
+    "multipliedValue": 468
+  },
+  {
+    "word": "እናውቃሇን",
+    "frequency": 1,
+    "rank": 469,
+    "multipliedValue": 469
+  },
+  {
+    "word": "የሚለትን",
+    "frequency": 1,
+    "rank": 470,
+    "multipliedValue": 470
+  },
+  {
+    "word": "ዘመድችን",
+    "frequency": 1,
+    "rank": 471,
+    "multipliedValue": 471
+  },
+  {
+    "word": "ጠይቆ",
+    "frequency": 1,
+    "rank": 472,
+    "multipliedValue": 472
+  },
+  {
+    "word": "ቆጥረው",
+    "frequency": 1,
+    "rank": 473,
+    "multipliedValue": 473
+  },
+  {
+    "word": "ሉዯርሱ",
+    "frequency": 1,
+    "rank": 474,
+    "multipliedValue": 474
+  },
+  {
+    "word": "እስከሚችለበት",
+    "frequency": 1,
+    "rank": 475,
+    "multipliedValue": 475
+  },
+  {
+    "word": "ዴረስ",
+    "frequency": 1,
+    "rank": 476,
+    "multipliedValue": 476
+  },
+  {
+    "word": "ሄዯው",
+    "frequency": 1,
+    "rank": 477,
+    "multipliedValue": 477
+  },
+  {
+    "word": "ቢፈሌጉ",
+    "frequency": 1,
+    "rank": 478,
+    "multipliedValue": 478
+  },
+  {
+    "word": "ወይ",
+    "frequency": 1,
+    "rank": 479,
+    "multipliedValue": 479
+  },
+  {
+    "word": "በኩሌ",
+    "frequency": 1,
+    "rank": 480,
+    "multipliedValue": 480
+  },
+  {
+    "word": "ተቆረጠ",
+    "frequency": 1,
+    "rank": 481,
+    "multipliedValue": 481
+  },
+  {
+    "word": "እንግዱህ",
+    "frequency": 1,
+    "rank": 482,
+    "multipliedValue": 482
+  },
+  {
+    "word": "መሠረተ",
+    "frequency": 2,
+    "rank": 483,
+    "multipliedValue": 966
+  },
+  {
+    "word": "ከጠፋ",
+    "frequency": 1,
+    "rank": 484,
+    "multipliedValue": 484
+  },
+  {
+    "word": "ቀጥል",
+    "frequency": 1,
+    "rank": 485,
+    "multipliedValue": 485
+  },
+  {
+    "word": "ሁሇተኛ",
+    "frequency": 1,
+    "rank": 486,
+    "multipliedValue": 486
+  },
+  {
+    "word": "መንገዴ",
+    "frequency": 1,
+    "rank": 487,
+    "multipliedValue": 487
+  },
+  {
+    "word": "ከመሠረተ",
+    "frequency": 1,
+    "rank": 488,
+    "multipliedValue": 488
+  },
+  {
+    "word": "መጋባት",
+    "frequency": 1,
+    "rank": 489,
+    "multipliedValue": 489
+  },
+  {
+    "word": "ሇራሱ",
+    "frequency": 1,
+    "rank": 490,
+    "multipliedValue": 490
+  },
+  {
+    "word": "አያገሇግሌም",
+    "frequency": 1,
+    "rank": 491,
+    "multipliedValue": 491
+  },
+  {
+    "word": "የሀሜተኛንና",
+    "frequency": 1,
+    "rank": 492,
+    "multipliedValue": 492
+  },
+  {
+    "word": "የሽሙዋጣጭን",
+    "frequency": 1,
+    "rank": 493,
+    "multipliedValue": 493
+  },
+  {
+    "word": "አፍ",
+    "frequency": 1,
+    "rank": 494,
+    "multipliedValue": 494
+  },
+  {
+    "word": "አይዘጋም",
+    "frequency": 1,
+    "rank": 495,
+    "multipliedValue": 495
+  },
+  {
+    "word": "እንዱያውም",
+    "frequency": 1,
+    "rank": 496,
+    "multipliedValue": 496
+  },
+  {
+    "word": "እሱነቱን",
+    "frequency": 1,
+    "rank": 497,
+    "multipliedValue": 497
+  },
+  {
+    "word": "ሇተጋባቸው",
+    "frequency": 1,
+    "rank": 498,
+    "multipliedValue": 498
+  },
+  {
+    "word": "ጌታዎች",
+    "frequency": 1,
+    "rank": 499,
+    "multipliedValue": 499
+  },
+  {
+    "word": "ጥገኛ",
+    "frequency": 1,
+    "rank": 500,
+    "multipliedValue": 500
+  },
+  {
+    "word": "የሚያዯርግ",
+    "frequency": 1,
+    "rank": 501,
+    "multipliedValue": 501
+  },
+  {
+    "word": "በመሠረተ",
+    "frequency": 1,
+    "rank": 502,
+    "multipliedValue": 502
+  },
+  {
+    "word": "ሰፈር",
+    "frequency": 1,
+    "rank": 503,
+    "multipliedValue": 503
+  },
+  {
+    "word": "የፈረንጅ",
+    "frequency": 1,
+    "rank": 504,
+    "multipliedValue": 504
+  },
+  {
+    "word": "ካገባች",
+    "frequency": 1,
+    "rank": 505,
+    "multipliedValue": 505
+  },
+  {
+    "word": "ስምዋን",
+    "frequency": 1,
+    "rank": 506,
+    "multipliedValue": 506
+  },
+  {
+    "word": "ጥሊ",
+    "frequency": 1,
+    "rank": 507,
+    "multipliedValue": 507
+  },
+  {
+    "word": "ሚስት",
+    "frequency": 1,
+    "rank": 508,
+    "multipliedValue": 508
+  },
+  {
+    "word": "ስትባሌ",
+    "frequency": 1,
+    "rank": 509,
+    "multipliedValue": 509
+  },
+  {
+    "word": "ምትኖር",
+    "frequency": 1,
+    "rank": 510,
+    "multipliedValue": 510
+  },
+  {
+    "word": "እሱንም",
+    "frequency": 1,
+    "rank": 511,
+    "multipliedValue": 511
+  },
+  {
+    "word": "የገሉት",
+    "frequency": 1,
+    "rank": 512,
+    "multipliedValue": 512
+  },
+  {
+    "word": "አምቻ",
+    "frequency": 1,
+    "rank": 513,
+    "multipliedValue": 513
+  },
+  {
+    "word": "ሲባሌ",
+    "frequency": 1,
+    "rank": 514,
+    "multipliedValue": 514
+  },
+  {
+    "word": "እንዱኖር",
+    "frequency": 1,
+    "rank": 515,
+    "multipliedValue": 515
+  },
+  {
+    "word": "የሚያዯርገው",
+    "frequency": 1,
+    "rank": 516,
+    "multipliedValue": 516
+  },
+  {
+    "word": "ቢሆንም",
+    "frequency": 1,
+    "rank": 517,
+    "multipliedValue": 517
+  },
+  {
+    "word": "ሇሌጅ",
+    "frequency": 1,
+    "rank": 518,
+    "multipliedValue": 518
+  },
+  {
+    "word": "መቸስ",
+    "frequency": 1,
+    "rank": 519,
+    "multipliedValue": 519
+  },
+  {
+    "word": "ማሇት",
+    "frequency": 1,
+    "rank": 520,
+    "multipliedValue": 520
+  },
+  {
+    "word": "መስእዋእት",
+    "frequency": 1,
+    "rank": 521,
+    "multipliedValue": 521
+  },
+  {
+    "word": "አዴርጎም",
+    "frequency": 1,
+    "rank": 522,
+    "multipliedValue": 522
+  },
+  {
+    "word": "ሇሌጆቹ",
+    "frequency": 1,
+    "rank": 523,
+    "multipliedValue": 523
+  },
+  {
+    "word": "ሇዘሩ",
+    "frequency": 1,
+    "rank": 524,
+    "multipliedValue": 524
+  },
+  {
+    "word": "መሠረት",
+    "frequency": 1,
+    "rank": 525,
+    "multipliedValue": 525
+  },
+  {
+    "word": "የሚጥሌ",
+    "frequency": 1,
+    "rank": 526,
+    "multipliedValue": 526
+  }
+]

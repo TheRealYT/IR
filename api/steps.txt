@@ -1,0 +1,38 @@
+        #  PHASE 1
+# Collect text as many as possible - done
+# Drag and drop to admin page - done
+# Remove markup (The query starts here) 
+# count frequency - done
+# save all words in there rank to file named as : unprocessed.txt - done
+# Calculate the product of rank and frequency and save to file named : rank_mult_freq.txt - done
+# show the graph in the admin page - done
+# Explain if it does follow Zipfian distribution, does it follow Zipfs law - TODO: done 
+
+        # PHASE 2
+# find the total word count
+# calculate the freq of a word from entire documemts
+# Fide its percentage
+# Find a way to decide on the percet of cutter
+# save stop words in the file named: stop_words_list.txt 
+# save rare words in the file named : rare_words.txt // We may not need to do this
+# save index words in the file named: index_words_list.txt 
+
+        # PHASE 3
+# Normalize the word and save them in the file named : normalized_words.txt 
+# create vaocabulary file name : vocabulary.txt
+# create posting file name : posting.txt // may be possible to make it one json file for both
+# stem the word and save the in the file named : stemmed_words.txt
+
+        # PHASE 4
+# Create an inverted index file in the form of -> Term - CF - Document - ID - TF - Location
+# calculate the similarty by following the following step
+    # use the freq of a word as its weight
+    # make list by this weight, append to list, mark it as flaged word
+    # if the second document do  not have that word, fill the respective list position with 0
+    # calculate the cosine of the two lists and store it in the list
+    # rank the list by decending order
+    # get and output the documents by there list order
+
+        # Additional Features
+# Add highligh in the documet when showing to the user
+# create admin page to the statistic of the data
