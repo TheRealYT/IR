@@ -18,7 +18,7 @@ async function retrieve(q) {
     const queryFreq = {};
 
     await normalize(terms);
-    stem(terms);
+    //stem(terms);
     freq(terms, queryFreq);
 
     const index = JSON.parse((await fss.readFile(INDEX_PATH)).toString());
@@ -62,7 +62,10 @@ async function retrieve(q) {
                 stats,
             };
         })
-        .sort((a, b) => b.score - a.score);
+        .sort((a, b) => b.score - a.score).map((v, i) => {
+            v.score = i + 1;
+            return v;
+        });
 }
 
 function cosine(vectorA, vectorB) {

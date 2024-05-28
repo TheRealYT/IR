@@ -7,6 +7,9 @@ function freq(words, wordFreqObj, docName, termLoc) {
             f += wordFreqObj[word];
         wordFreqObj[word] = f;
 
+        if (termLoc === undefined)
+            continue;
+
         let ff = 1;
         if (word in termLoc) {
             if (docName in termLoc[word]) {
@@ -19,20 +22,22 @@ function freq(words, wordFreqObj, docName, termLoc) {
 
 async function sortedWordFreq(wordFreq) {
     const words = new Array(wordFreq.length), freqs = new Array(wordFreq.length);
-    const arr = Object.entries(wordFreq).sort((a, b) => b[1] - a[1]);
-    arr.forEach(([word, freq], i) => {
-        words[i] = word;
-        freqs[i] = freq;
-    });
-    const output = arr.map((pair) => ({
-        word: pair[0],
-        frequency: pair[1],
-    }));
-    await fs.appendFile('wordsFreq.json', JSON.stringify(output, null, 2));
+
+    const obj = Object
+        .entries(wordFreq)
+        .sort((a, b) => b[1] - a[1])
+        .map(([word, frequency], i) => {
+            words[i] = word;
+            freqs[i] = frequency;
+            return {word, frequency};
+        });
+
+    await fs.appendFile('wordsFreq.json', JSON.stringify(obj, null, 2));
+
     return [words, freqs];
 }
 
-async function rankMultFreq(wordFreq) {
+async function rankMultiFreq(wordFreq) {
     const arr = Object.entries(wordFreq).sort((a, b) => b[1] - a[1]);
     const output = arr.map((pair, index) => ({
         word: pair[0],
@@ -40,7 +45,7 @@ async function rankMultFreq(wordFreq) {
         rank: index + 1,
         multipliedValue: (index + 1) * pair[1],
     }));
-    await fs.appendFile('rankMultFreq.json', JSON.stringify(output, null, 2));
+    await fs.appendFile('rankMultiFreq.json', JSON.stringify(output, null, 2));
 }
 
-module.exports = {freq, sortedWordFreq, rankMultFreq};
+module.exports = {freq, sortedWordFreq, rankMultiFreq};

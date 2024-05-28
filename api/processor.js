@@ -8,7 +8,7 @@ const {normalize} = require('../scripts/normalize');
 const {removeStopWords} = require('../scripts/stop_word');
 const {stem} = require('../scripts/stem');
 const {index} = require('../scripts');
-const {freq, sortedWordFreq, rankMultFreq} = require('../scripts/freq');
+const {freq, sortedWordFreq, rankMultiFreq} = require('../scripts/freq');
 const {drawGraph} = require('../scripts/statistics');
 
 const router = new Router();
@@ -36,17 +36,19 @@ router.post('/process', async (req, res) => {
 
         freq(words, totalFreq, docName, termLoc); // count freq
 
-        await normalize(words);
-        stem(words);
+        await normalize(termLoc);
+        // stem(termLoc);
 
         await fs.writeFile(filepath, content);
     }
 
-    const [words, freqs] = sortedWordFreq(totalFreq);
-    await rankMultFreq(totalFreq);
+    // TODO: save file Object.keys(termLoc) vocabulary
+
+    const [words, freqs] = await sortedWordFreq(totalFreq);
+    await rankMultiFreq(totalFreq);
     const graphData = drawGraph(words, freqs);
     // Luhn
-    await removeStopWords(totalFreq, termLoc); // clean up indices
+    await removeStopWords(termLoc, files.length); // clean up indices
 
     await index(termLoc);
 

@@ -2,11 +2,29 @@ const path = require('node:path');
 const fs = require('node:fs/promises');
 const ABBR_PATH = path.join(__dirname, '..', 'am-abbr.json');
 
-async function normalize(words) {
+async function normalize(termLoc) {
     const abbrList = JSON.parse((await fs.readFile(ABBR_PATH)).toString());
-    words.forEach((word, i) => {
-        words[i] = normalizeAbbr(normalizeChar(word), abbrList);
+    Object.keys(termLoc).forEach((word) => {
+        const normalWord = normalizeAbbr(normalizeChar(word), abbrList);
+
+        if (normalWord === word) return;
+
+        if (normalWord in termLoc) {
+            for (const doc in termLoc[word]) {
+                let f = termLoc[word][doc];
+
+                if (doc in termLoc[normalWord])
+                    f += termLoc[normalWord][doc];
+
+                termLoc[normalWord][doc] = f;
+            }
+        } else {
+            termLoc[normalWord] = termLoc[word];
+        }
+
+        delete termLoc[word];
     });
+    // TODO: save to file
 }
 
 function normalizeAbbr(word, abbrList) {

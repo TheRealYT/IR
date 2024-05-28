@@ -1,36 +1,19 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
 
-async function removeStopWords(wordFreq, indexTerms) {
-    let freqSum = 0;
+async function removeStopWords(termLoc, D) {
+    for (const term of Object.keys(termLoc)) {
+        const df = Object.keys(term).length;
+        const freq = Object.values(term).reduce((a, b) => a + b);
+        const per = Math.round((df / D) * 100);
 
-    for (let key in wordFreq) {
-        freqSum += wordFreq[key];
-    }
-
-    const stop = [];
-    const rare = [];
-
-    for (let key in wordFreq) {
-        let per = (wordFreq[key] / freqSum) * 1000;
-
-        if (per < 9 && per > 1) {
-            // index term
-        } else {
-            if (key in indexTerms)
-                delete indexTerms[key];
-
-            if (per >= 9) {
-                stop.push(key);
-            } else if (per <= 1) {
-                rare.push(key);
-            }
+        if (per >= 80) {
+            delete termLoc[term];
+            // TODO: save to file
         }
-    }
 
-    await fs.appendFile(path.join(__dirname, '..', 'index_words.txt'), Object.keys(indexTerms).join('\n'));
-    await fs.appendFile(path.join(__dirname, '..', 'stop_words.txt'), stop.join('\n'));
-    await fs.appendFile(path.join(__dirname, '..', 'rare_words.txt'), rare.join('\n'));
+        // TODO: remove rare words
+    }
 }
 
 module.exports = {removeStopWords};
