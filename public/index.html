@@ -40,7 +40,6 @@
             msg.innerText = 'Searching...';
 
             fetch(`/search?q=${encodeURIComponent(q)}`).then(async res => {
-                await new Promise(res => setTimeout(res, 1000));
                 const {data, message} = await res.json();
 
                 docs.innerHTML = data
