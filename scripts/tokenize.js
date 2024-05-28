@@ -1,6 +1,6 @@
 function tokenize(content) {
     return content
-        .replace(/[^ሀ-ፖ\/\-]/mgi, ' ')
+        .replace(/[^ሀ-ፖ\/\-]/img, ' ')
         .replace(/\s+/g, ' ')
         .trim()
         .split(' ')

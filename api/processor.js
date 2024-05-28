@@ -8,7 +8,7 @@ const {normalize} = require('../scripts/normalize');
 const {removeStopWords} = require('../scripts/stop_word');
 const {stem} = require('../scripts/stem');
 const {index} = require('../scripts');
-const {freq, sortedWordFreq} = require('../scripts/freq');
+const {freq, sortedWordFreq, rankMultFreq} = require('../scripts/freq');
 const {drawGraph} = require('../scripts/statistics');
 
 const router = new Router();
@@ -36,12 +36,13 @@ router.post('/process', async (req, res) => {
         const words = tokenize(content);
         wordsCount += words.length;
 
-        await normalize(words);
         freq(words, docFreq); // count entire freq
+        
+        await normalize(words);
         stem(words);
 
         const termFreq = {};
-        freq(words, termFreq); // count only in a doc
+        freq(words, termFreq); // count only in a doc, we may need to save the word freq of each docs 
 
         index(docName, [Object.keys(termFreq), Object.values(termFreq)], indexWords); // use all terms as index
 
@@ -49,6 +50,7 @@ router.post('/process', async (req, res) => {
     }
 
     const [words, freqs] = sortedWordFreq(docFreq);
+    rankMultFreq(docFreq)
     const graphData = drawGraph(words, freqs);
     // Luhn
     await removeStopWords(docFreq, indexWords); // clean up indices
