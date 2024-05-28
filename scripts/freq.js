@@ -1,14 +1,19 @@
 const fs = require('node:fs/promises');
 
-function freq(words, wordFreqObj) {
-
+function freq(words, wordFreqObj, docName, termLoc) {
     for (const word of words) {
         let f = 1;
-
         if (word in wordFreqObj)
             f += wordFreqObj[word];
-
         wordFreqObj[word] = f;
+
+        let ff = 1;
+        if (word in termLoc) {
+            if (docName in termLoc[word]) {
+                ff += termLoc[word][docName];
+            }
+        } else termLoc[word] = {};
+        termLoc[word][docName] = ff;
     }
 }
 
@@ -19,7 +24,7 @@ async function sortedWordFreq(wordFreq) {
         words[i] = word;
         freqs[i] = freq;
     });
-    const output = arr.map((pair, index) => ({
+    const output = arr.map((pair) => ({
         word: pair[0],
         frequency: pair[1],
     }));

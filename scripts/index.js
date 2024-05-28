@@ -1,18 +1,10 @@
-function index(docName, wordFreq, indexWords) {
-    const [words, freqs] = wordFreq;
+const fs = require('node:fs/promises');
+const path = require('node:path');
 
-    for (let i = 0; i < words.length; i++) {
-        const word = words[i];
-        let freq = freqs[i];
+const INDEX_PATH = path.join(__dirname, '..', 'indices.json');
 
-        if (word in indexWords) {
-            if (docName in indexWords[word]) {
-                freq += indexWords[word][docName];
-            }
-        } else indexWords[word] = {};
-
-        indexWords[word][docName] = freq;
-    }
+async function index(indexWords) {
+    await fs.writeFile(INDEX_PATH, JSON.stringify(indexWords));
 }
 
 module.exports = {index};

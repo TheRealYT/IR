@@ -14,7 +14,6 @@ const {drawGraph} = require('../scripts/statistics');
 const router = new Router();
 
 const DOCS_PATH = path.join(__dirname, '..', 'docs');
-const INDEX_PATH = path.join(__dirname, '..', 'indices.json');
 
 router.post('/process', async (req, res) => {
     const {files} = req.body;
@@ -25,9 +24,8 @@ router.post('/process', async (req, res) => {
     if (!existsSync(DOCS_PATH))
         await fs.mkdir(DOCS_PATH);
 
-    const docFreq = {};
-    const indexWords = existsSync(INDEX_PATH)
-        ? JSON.parse((await fs.readFile(INDEX_PATH)).toString()) : {};
+    const totalFreq = {};
+    const termLoc = {};
 
     for (let {name, content} of files) {
         const docName = `${Date.now()}_${name}`;
@@ -36,27 +34,21 @@ router.post('/process', async (req, res) => {
         const words = tokenize(content);
         wordsCount += words.length;
 
-        freq(words, docFreq); // count entire freq
+        freq(words, totalFreq, docName, termLoc); // count freq
 
         await normalize(words);
         stem(words);
 
-        const termFreq = {};
-        freq(words, termFreq); // count only in a doc, we may need to save the word freq of each doc
-
-        // TODO: move outside the loop, store values outside
-        index(docName, [Object.keys(termFreq), Object.values(termFreq)], indexWords); // use all terms as index
-
         await fs.writeFile(filepath, content);
     }
 
-    const [words, freqs] = sortedWordFreq(docFreq);
-    await rankMultFreq(docFreq);
+    const [words, freqs] = sortedWordFreq(totalFreq);
+    await rankMultFreq(totalFreq);
     const graphData = drawGraph(words, freqs);
     // Luhn
-    await removeStopWords(docFreq, indexWords); // clean up indices
+    await removeStopWords(totalFreq, termLoc); // clean up indices
 
-    await fs.writeFile(INDEX_PATH, JSON.stringify(indexWords));
+    await index(termLoc);
 
     const endTime = Date.now() / 1000;
 
