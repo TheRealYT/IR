@@ -212,25 +212,23 @@ function stem(termLoc) {
         let finalWord = '';
 
         word.split('').forEach(char => {
-            finalWord += amharicChar[char];
+            if (char in amharicChar)
+                finalWord += amharicChar[char];
         });
 
-        // if (finalWord.length >= 3) {
-        //     prefixList.forEach(pre => {
-        //         if (finalWord.startsWith(pre) && finalWord.length - pre.length >= 3) {
-        //             finalWord = finalWord.substring(pre.length);
-        //         }
-        //     });
-        //     suffixList.forEach(suffix => {
-        //         if (finalWord.endsWith(suffix) && finalWord.length - suffix.length >= 3) {
-        //             finalWord = finalWord.substring(0, finalWord.length - suffix.length);
-        //         }
-        //     });
-        // }
+        if (finalWord.length >= 3) {
+            prefixList.forEach(pre => {
+                if (finalWord.startsWith(pre) && finalWord.length - pre.length >= 3) {
+                    finalWord = finalWord.substring(pre.length);
+                }
+            });
+            suffixList.forEach(suffix => {
+                if (finalWord.endsWith(suffix) && finalWord.length - suffix.length >= 3) {
+                    finalWord = finalWord.substring(0, finalWord.length - suffix.length);
+                }
+            });
+        } else return;
 
-        if (finalWord === 'ህኡል') {
-            console.log('Hi');
-        }
         if (finalWord === word) return;
 
         if (finalWord in termLoc) {
