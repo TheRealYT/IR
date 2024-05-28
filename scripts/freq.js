@@ -32,7 +32,8 @@ async function sortedWordFreq(wordFreq) {
             return {word, frequency};
         });
 
-    await fs.appendFile('wordsFreq.json', JSON.stringify(obj, null, 2));
+    await fs.appendFile('wordsFreq.txt', `Total of ${obj.length} words\nWord Frequency\n\n`
+        + obj.map(({word, frequency}) => `${word} ${frequency}`).join('\n'));
 
     return [words, freqs];
 }
@@ -45,7 +46,13 @@ async function rankMultiFreq(wordFreq) {
         rank: index + 1,
         multipliedValue: (index + 1) * pair[1],
     }));
-    await fs.appendFile('rankMultiFreq.json', JSON.stringify(output, null, 2));
+    await fs.appendFile('rankMultiFreq.txt', `Total of ${output.length} words\nRank Word Frequency Multiplied\n\n`
+        + output.map(({
+                          word,
+                          frequency,
+                          rank,
+                          multipliedValue,
+                      }) => `${rank} ${word} ${frequency} ${multipliedValue}`).join('\n'));
 }
 
 module.exports = {freq, sortedWordFreq, rankMultiFreq};

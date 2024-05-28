@@ -42,12 +42,10 @@ router.post('/process', async (req, res) => {
         await fs.writeFile(filepath, content);
     }
 
-    // TODO: save file Object.keys(termLoc) vocabulary
-
     const [words, freqs] = await sortedWordFreq(totalFreq);
     await rankMultiFreq(totalFreq);
     const graphData = drawGraph(words, freqs);
-    // Luhn
+
     await removeStopWords(termLoc, files.length); // clean up indices
 
     await index(termLoc);
