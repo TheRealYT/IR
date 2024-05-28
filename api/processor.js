@@ -37,7 +37,7 @@ router.post('/process', async (req, res) => {
         freq(words, totalFreq, docName, termLoc); // count freq
 
         await normalize(termLoc);
-        // stem(termLoc);
+        stem(termLoc);
 
         await fs.writeFile(filepath, content);
     }

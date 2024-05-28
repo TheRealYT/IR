@@ -20,7 +20,7 @@ async function retrieve(q) {
     freq(terms, queryFreq);
 
     await normalize(queryFreq);
-    //stem(queryFreq);
+    stem(queryFreq);
 
     const index = JSON.parse((await fss.readFile(INDEX_PATH)).toString());
     const uniqueTerms = Object.keys(queryFreq);
