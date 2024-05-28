@@ -37,12 +37,12 @@ router.post('/process', async (req, res) => {
         wordsCount += words.length;
 
         freq(words, docFreq); // count entire freq
-        
+
         await normalize(words);
         stem(words);
 
         const termFreq = {};
-        freq(words, termFreq); // count only in a doc, we may need to save the word freq of each docs 
+        freq(words, termFreq); // count only in a doc, we may need to save the word freq of each doc
 
         index(docName, [Object.keys(termFreq), Object.values(termFreq)], indexWords); // use all terms as index
 
@@ -50,7 +50,7 @@ router.post('/process', async (req, res) => {
     }
 
     const [words, freqs] = sortedWordFreq(docFreq);
-    rankMultFreq(docFreq)
+    await rankMultFreq(docFreq);
     const graphData = drawGraph(words, freqs);
     // Luhn
     await removeStopWords(docFreq, indexWords); // clean up indices
