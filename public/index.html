@@ -22,11 +22,38 @@
 
     </div>
 
+    <dialog>
+    </dialog>
+
     <script>
         const btn = document.querySelector('button');
         const input = document.querySelector('input[type=search]');
         const msg = document.querySelector('.msg');
         const docs = document.querySelector('.docs');
+        const dialog = document.querySelector('dialog');
+
+        function showDoc(name, q) {
+            const words = q.replace(/[^ሀ-ፖ\/\-]/mgi, ' ')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .split(' ')
+                .filter(word => word.length > 1);
+
+            dialog.showModal();
+            dialog.innerText = 'Loading...';
+
+            fetch(`/doc/${name}`).then(async res => {
+                dialog.innerText = await res.text();
+
+                btn.disabled = false;
+                input.disabled = false;
+            }).catch(e => {
+                alert(e.message);
+                dialog.close();
+                btn.disabled = false;
+                input.disabled = false;
+            });
+        }
 
         btn.onclick = () => {
             const q = input.value;
@@ -43,7 +70,7 @@
                 const {data, message} = await res.json();
 
                 docs.innerHTML = data
-                    .map(doc => (`<div onclick="window.open('doc/${doc.doc}')" class="doc">${doc.doc}<span class="caption">${doc.stats}<span class="caption-end">${doc.score} ⭐</span></span></div>`))
+                    .map(doc => (`<div onclick="showDoc('${doc.doc}', '${q}')" class="doc">${doc.doc}<span class="caption">${doc.stats}<span class="caption-end">${doc.score} ⭐</span></span></div>`))
                     .join('');
 
                 btn.disabled = false;
@@ -55,6 +82,13 @@
                 input.disabled = false;
             });
         };
+
+        const url = new URL(location.href);
+        const q = url.searchParams.get('q');
+        if (q != null) {
+            input.value = q;
+            btn.click();
+        }
     </script>
 </body>
 </html>

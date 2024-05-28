@@ -78,3 +78,11 @@ li {
 li button {
     @apply cursor-pointer
 }
+
+dialog {
+    @apply p-10 rounded outline-none bg-gray-800 text-gray-200 shadow
+}
+
+dialog::backdrop {
+    @apply bg-black bg-opacity-50
+}
