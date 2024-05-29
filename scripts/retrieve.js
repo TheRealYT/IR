@@ -88,4 +88,20 @@ function cosine(vectorA, vectorB) {
     return dotProduct / (Math.sqrt(absA * absB));
 }
 
-module.exports = {retrieve};
+async function getStems(content) {
+    const terms = tokenize(content);
+    const termFreq = {};
+
+    freq(terms, termFreq);
+
+    for (const term of Object.keys(termFreq)) {
+        termFreq[term] = {[term]: termFreq[term]};
+    }
+
+    await normalize(termFreq);
+    stem(termFreq);
+
+    return termFreq;
+}
+
+module.exports = {retrieve, getStems};

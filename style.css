@@ -27,7 +27,7 @@ button {
 }
 
 .msg {
-    @apply px-7 py-1 text-sm w-full rounded-b bg-gray-800 text-gray-300 relative top-[-2px] transition-all
+    @apply px-7 pr-2 py-1 text-sm w-full rounded-b bg-gray-800 text-gray-300 relative top-[-2px] transition-all
 }
 
 .msg:empty {
@@ -85,4 +85,20 @@ dialog {
 
 dialog::backdrop {
     @apply bg-black bg-opacity-50
+}
+
+.highlight {
+    @apply bg-yellow-400 text-gray-900
+}
+
+.bar {
+    @apply p-3 rounded sticky bottom-0 bg-gray-600 text-center bg-opacity-50 shadow select-none
+}
+
+.indicator {
+    @apply text-gray-900 bg-slate-300 rounded p-2 font-bold
+}
+
+.active {
+    @apply bg-amber-500
 }

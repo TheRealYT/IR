@@ -32,18 +32,62 @@
         const docs = document.querySelector('.docs');
         const dialog = document.querySelector('dialog');
 
+        let i = -1;
+
+        function next() {
+            const targets = document.querySelectorAll('.highlight');
+            const indicator = document.querySelector('.indicator');
+
+            if (i >= targets.length - 1)
+                i = -1;
+            targets.forEach(t => t.classList.remove('active'));
+
+            if (targets.length > 0 && i < targets.length - 1) {
+                i++;
+                targets.item(i).scrollIntoView({behavior: 'smooth'});
+                targets.item(i).classList.add('active');
+                indicator.innerText = `${i + 1} / ${targets.length}`;
+            }
+        }
+
+        function prev() {
+            const targets = document.querySelectorAll('.highlight');
+            const indicator = document.querySelector('.indicator');
+
+            if (i <= 0)
+                i = targets.length;
+            targets.forEach(t => t.classList.remove('active'));
+
+            if (targets.length > 0 && i > 0) {
+                i--;
+                targets.item(i).scrollIntoView({behavior: 'smooth'});
+                targets.item(i).classList.add('active');
+                indicator.innerText = `${i + 1} / ${targets.length}`;
+            }
+        }
+
         function showDoc(name, q) {
-            const words = q.replace(/[^ሀ-ፖ\/\-]/mgi, ' ')
-                .replace(/\s+/g, ' ')
-                .trim()
-                .split(' ')
-                .filter(word => word.length > 1);
-
             dialog.showModal();
-            dialog.innerText = 'Loading...';
+            dialog.innerHTML = 'Loading...';
 
-            fetch(`/doc/${name}`).then(async res => {
-                dialog.innerText = await res.text();
+            fetch(`/doc/${name}?q=${encodeURIComponent(q)}`).then(async res => {
+                let content = (await res.text()).replace(/\n/g, '<br>');
+
+                if (res.headers.has('words')) {
+                    const words = decodeURIComponent(res.headers.get('words')).split(',');
+                    for (const word of words) {
+                        content = content.replaceAll(word, `<span class="highlight">${word}</span>`);
+                    }
+                }
+
+                i = -1;
+
+                dialog.innerHTML = content;
+                dialog.innerHTML += `<div class="bar">
+<button class="btn" onclick="prev()">Prev</button>
+<span class="indicator">1 / ${document.querySelectorAll('.highlight').length}</span>
+<button class="btn" onclick="next()">Next</button>
+</div>`;
 
                 btn.disabled = false;
                 input.disabled = false;
@@ -64,7 +108,7 @@
             btn.disabled = true;
             input.disabled = true;
             docs.innerHTML = '';
-            msg.innerText = 'Searching...';
+            msg.innerHTML = 'Searching...';
 
             fetch(`/search?q=${encodeURIComponent(q)}`).then(async res => {
                 const {data, message} = await res.json();
@@ -75,19 +119,26 @@
 
                 btn.disabled = false;
                 input.disabled = false;
-                msg.innerText = message;
+                msg.innerHTML = message;
+
+                if (getQ() !== q && data.length > 0)
+                    msg.innerHTML += `<button class="btn float-end" onclick="alert('http://127.0.0.1:3000?q=${encodeURIComponent(q)}')">Save Search</button>`;
             }).catch(e => {
-                msg.innerText = e.message;
+                msg.innerHTML = e.message;
                 btn.disabled = false;
                 input.disabled = false;
             });
         };
 
-        const url = new URL(location.href);
-        const q = url.searchParams.get('q');
+        const q = getQ();
         if (q != null) {
             input.value = q;
             btn.click();
+        }
+
+        function getQ() {
+            const url = new URL(location.href);
+            return url.searchParams.get('q');
         }
     </script>
 </body>
