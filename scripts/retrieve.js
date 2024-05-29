@@ -40,6 +40,8 @@ async function retrieve(q) {
             .sort((a, b) => b.weight - a.weight);
 
         for (const {doc, weight} of docs) {
+            if (doc === 'CF') continue;
+
             if (!(doc in docVectors))
                 docVectors[doc] = new Array(uniqueTerms.length).fill(0);
             docVectors[doc][i] = weight;

@@ -5,6 +5,9 @@ const path = require('node:path');
 const INDEX_PATH = path.join(__dirname, '..', 'indices.json');
 
 async function index(indexWords) {
+    for (const term of Object.keys(indexWords))
+        indexWords[term].CF = Object.values(indexWords[term]).reduce((a, b) => a + b);
+
     let oldIndex = {};
     if (existsSync(INDEX_PATH))
         oldIndex = JSON.parse((await fs.readFile(INDEX_PATH)).toString());
