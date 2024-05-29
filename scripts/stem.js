@@ -232,13 +232,17 @@ function stem(termLoc) {
         if (finalWord === word) return;
 
         if (finalWord in termLoc) {
-            for (const doc in termLoc[word]) {
-                let f = termLoc[word][doc];
+            if (typeof termLoc[word] == 'object')
+                for (const doc in termLoc[word]) {
+                    let f = termLoc[word][doc];
 
-                if (doc in termLoc[finalWord])
-                    f += termLoc[finalWord][doc];
+                    if (doc in termLoc[finalWord])
+                        f += termLoc[finalWord][doc];
 
-                termLoc[finalWord][doc] = f;
+                    termLoc[finalWord][doc] = f;
+                }
+            else {
+                termLoc[finalWord] += termLoc[word];
             }
         } else {
             termLoc[finalWord] = termLoc[word];

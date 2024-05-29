@@ -15,6 +15,10 @@ const router = new Router();
 
 const DOCS_PATH = path.join(__dirname, '..', 'docs');
 
+router.get('/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'public', 'process.html'));
+});
+
 router.post('/process', async (req, res) => {
     const {files} = req.body;
 

@@ -15,5 +15,7 @@ app.use(search);
 app.use(doc);
 
 app.listen(PORT, () => {
-    console.log('Server started ', `http://127.0.0.1:${PORT}`);
+    console.log('Server started');
+    console.log(`http://127.0.0.1:${PORT}`);
+    console.log(`http://127.0.0.1:${PORT}/admin`);
 });
